@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pacing and activity management — what the evidence actually shows | ManyRoots</title>
+<meta name="description" content="Early evidence for fatigue &amp; low energy.">
+<link rel="canonical" href="https://manyroots.org/i/pacing">
+<meta property="og:title" content="Pacing and activity management — what the evidence actually shows | ManyRoots">
+<meta property="og:description" content="Early evidence for fatigue &amp; low energy.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--night:#0E1512;--night2:#121A16;--card:#1A241E;--line:#28352D;--ink:#E6EAE3;--muted:#96A199;--faint:#5C6B61;--ivory:#E8E2D0;--accent:#D8C9A3;
+--strong:#7FCBA4;--moderate:#8FB6EA;--early:#D8C9A3;--traditional:#C9A9D4;--not_supported:#D98B80;
+--herb:#4FA478;--nutrient:#5D95DC;--practice:#C46BB4;--food:#C08033;--conventional:#8E7CE0;
+--pos:#4FA478;--mixed:#C08033;--nul:#96A199;--neg:#C4455E}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--ink);font-family:'Instrument Sans',system-ui,-apple-system,sans-serif;line-height:1.62;overflow-wrap:break-word}
+/* Guideline titles arrive as unbreakable slash-runs ("2025 AHA/ACC/AANP/AAPA/ABC/ACCP/...")
+   and browsers do not break after "/", so on a phone one of these pushes a 511px line box
+   through a 375px viewport and the text is lost off the edge. Break anywhere in citations. */
+ol.cites a,ol.cites li{overflow-wrap:anywhere}
+.wrap{max-width:740px;margin:0 auto;padding:28px 24px 80px}
+a{color:var(--accent)}
+header.site{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header.site a.wm{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:20px;color:var(--ivory);text-decoration:none}
+header.site nav{margin-left:auto;display:flex;gap:16px;font-size:13.5px}
+header.site nav a{color:var(--muted);text-decoration:none}
+header.site nav a:hover{color:var(--ink)}
+.crumb{font-size:12.5px;color:var(--faint);margin:0 0 10px}
+.crumb a{color:var(--muted);text-decoration:none}
+h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(28px,5.2vw,42px);color:var(--ivory);margin:0 0 12px;line-height:1.1;text-wrap:balance}
+h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:23px;color:var(--ivory);margin:44px 0 10px;text-wrap:balance}
+h3{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);font-weight:600;margin:28px 0 8px}
+p{margin:0 0 15px;max-width:66ch}
+.lede{font-size:18px;color:var(--ink);max-width:62ch}
+.muted{color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;padding:4px 13px;border-radius:999px;background:var(--card);border:1px solid var(--line);margin:0 8px 8px 0}
+.tchip{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:8px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.flags{margin:16px 0 0}
+.flag{border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin:0 0 10px;font-size:14px;color:var(--muted);line-height:1.55}
+.flag b{display:block;color:var(--ink);margin-bottom:5px;font-size:14.5px}
+.flag.emergency{background:#2A1E20;border-color:#5A3A3E;color:#E3C4BE}
+.flag.emergency b{color:#F0D5D0}
+.ubadge{display:inline-block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;padding:1px 8px;border-radius:999px;margin-bottom:7px}
+.flag.emergency .ubadge{background:#C4455E;color:#fff}
+.flag.urgent .ubadge{background:rgba(192,128,51,.2);color:#D9A254}
+.flag.routine .ubadge{background:var(--card);color:var(--faint);border:1px solid var(--line)}
+.tgroup{margin:22px 0 0}
+.tgroup>h3{margin-bottom:4px}
+ul.rows{list-style:none;margin:0;padding:0}
+ul.rows li{border-top:1px solid var(--line)}
+ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
+ul.rows a:hover{color:var(--accent)}
+ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
+.card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
+.card h4 a{color:var(--ivory);text-decoration:none}
+.safety{background:var(--night2);border:1px solid var(--line);border-radius:10px;padding:13px 16px;font-size:13.5px;color:var(--muted);line-height:1.56}
+.safety b{color:var(--ink)}
+.safety p{margin:0 0 9px}.safety p:last-child{margin:0}
+details{border:1px solid var(--line);border-radius:10px;margin:11px 0;background:var(--card)}
+summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted);padding:11px 15px;list-style-position:inside}
+details[open] summary{color:var(--ink)}
+.dbody{padding:0 15px 13px;font-size:13.5px;color:var(--muted);line-height:1.62}
+ol.cites{list-style:none;margin:0;padding:0}
+ol.cites li{border-top:1px solid var(--line);padding:11px 0}
+ol.cites li:first-child{border-top:none}
+.cdir{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:1px}
+ol.cites a{color:var(--ink);text-decoration:none;font-weight:500;font-size:14px}
+ol.cites a:hover{color:var(--accent);text-decoration:underline}
+.cwho{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11.5px;color:var(--faint);margin:3px 0}
+.cfind{font-size:13px;color:var(--muted);line-height:1.5;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:11px;margin:16px 0 0}
+.grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--faint)}
+.grid b{display:block;font-family:'Fraunces',Georgia,serif;font-size:17px;color:var(--ivory);margin-bottom:3px}
+.grid span{font-size:12.5px;color:var(--muted)}
+.crisis{background:#2A1E20;border:1px solid #5A3A3E;border-radius:11px;padding:15px 19px;margin:34px 0 0;color:#E3C4BE;font-size:14px}
+.crisis b{color:#F0D5D0}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding-top:18px;font-size:12.5px;color:var(--faint)}
+footer.site a{color:var(--muted)}
+@media print{
+  :root{--night:#fff;--night2:#fff;--card:#fff;--line:#c9c9c4;--ink:#111;--muted:#333;--faint:#666;--ivory:#000;--accent:#333}
+  body{background:#fff;color:#111}
+  header.site nav,.crisis{display:none}
+  details{border:none}details[open] summary{display:none}.dbody{padding:0}
+  a{color:#111;text-decoration:none}
+  ol.cites a::after{content:" (pubmed.ncbi.nlm.nih.gov/" attr(data-pmid) ")";font-size:10px;color:#555}
+  .flag.emergency{background:#f4f4f4;border:1px solid #999;color:#111}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Pacing and activity management","description":"Early evidence for fatigue & low energy.","url":"https://manyroots.org/i/pacing","isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"Comparison of adaptive pacing therapy, cognitive behaviour therapy, graded exercise therapy, and specialist medical care for chronic fatigue syndrome (PACE): a randomised trial.","identifier":"PMID:21334061"},{"@type":"ScholarlyArticle","name":"Effectiveness of energy conservation management on fatigue and participation in multiple sclerosis: A randomized controlled trial.","identifier":"PMID:28528565"},{"@type":"ScholarlyArticle","name":"A scoping review of 'Pacing' for management of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): lessons learned for the long COVID pandemic.","identifier":"PMID:37838675"},{"@type":"ScholarlyArticle","name":"Exercise therapy for chronic fatigue syndrome.","identifier":"PMID:39697147"},{"@type":"ScholarlyArticle","name":"Cardiopulmonary and metabolic responses during a 2-day CPET in myalgic encephalomyelitis/chronic fatigue syndrome: translating reduced oxygen consumption to impairment status to treatment considerations.","identifier":"PMID:38965566"},{"@type":"ScholarlyArticle","name":"Pacing as a strategy to improve energy management in myalgic encephalomyelitis/chronic fatigue syndrome: a consensus document.","identifier":"PMID:22181560"},{"@type":"ScholarlyArticle","name":"What Primary Care Practitioners Need to Know about the New NICE Guideline for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome in Adults.","identifier":"PMID:36553962"}]}</script>
+<script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>
+</head><body>
+<div class="wrap">
+<header class="site">
+  <a class="wm" href="/">ManyRoots</a>
+  <nav><a href="/">All conditions</a><a href="/map">The map</a><a href="/how-we-grade">How we grade</a></nav>
+</header>
+
+<p class="crumb"><a href="/">All conditions</a> › Pacing and activity management</p>
+<span class="tchip"><span class="dot" style="background:#C46BB4"></span>Practices</span>
+<h1>Pacing and activity management</h1>
+<span class="chip" style="color:var(--early)"><svg class="th" width="42" height="10" role="img" aria-label="Early evidence"><line x1="2" y1="5" x2="40" y2="5" stroke="#D8C9A3" stroke-width="1.2" stroke-linecap="round" opacity=".9"/></svg> Early evidence · for fatigue &amp; low energy</span>
+
+
+<div class="card">
+<h4><a href="/c/fatigue">For fatigue &amp; low energy</a></h4>
+<p style="margin:8px 0 12px">Pacing means learning where your energy limit sits and deliberately staying inside it, so you do not trigger a crash a day or two later. It is the main strategy recommended for people with ME/CFS and post-exertional malaise, and many people describe it as the single most useful thing they do. The honest state of the science is that it has barely been properly tested: the studies that exist are small and inconsistent, and the two largest trials of structured energy-management programmes — one in ME/CFS, one in multiple sclerosis — did not beat standard care.</p>
+<h3 style="margin-top:0">Safety</h3>
+<div class="safety"><p>Pacing carries essentially no direct physical risk; adaptive pacing therapy in PACE recorded serious adverse reactions in 2 of 159 participants (1%), similar to the other arms of that trial (1-2%). The risks are indirect. Rigidly restricting activity in someone who does not have post-exertional malaise can lead to unnecessary deconditioning and social withdrawal — and the one trial that measured participation directly found an unfavourable effect of structured energy conservation on the social relations domain (Blikman 2017). Using pacing as the whole plan can also delay identification of a treatable cause of fatigue.</p>
+<p><b>Who should be careful:</b> There is no population in whom staying within an energy limit is physically dangerous, but pacing should not stand in for diagnostic workup: anaemia, hypothyroidism, sleep apnoea, diabetes, heart failure, cancer and medication side effects all cause fatigue that rest does not fix, and all need finding. Pacing has not been tested in adults with ordinary unexplained tiredness who do not have post-exertional malaise, so its use there is an extrapolation, and the structured version tested in multiple sclerosis did not help.</p>
+<p><b>Interactions:</b> No pharmacological interactions. Practically, pacing and graded exercise pull in opposite directions and combining them incoherently can undermine both; anyone with post-exertional malaise being asked to increase activity on a fixed schedule should raise this with their clinician.</p></div>
+<details><summary>What the evidence says</summary><div class="dbody"><p>A scoping review that screened 177 records and included 17 studies (three RCTs, one uncontrolled trial, one interventional case series, and twelve observational, cross-sectional or analytical studies) found 11 studies reporting benefit, 4 reporting no effect, and 2 reporting a detrimental effect compared with control, with highly variable designs and outcome measures and poor-to-fair methodological quality; the authors concluded the literature base is insufficient to inform treatment practice (Sanal-Hayes 2023). The largest randomised test in ME/CFS was null: adaptive pacing therapy added to specialist medical care did not change fatigue at 52 weeks (0.7 points lower, 95% CI -0.9 to 2.3, p=0.38) or physical function (p=0.18), and the authors concluded it was not an effective addition (White 2011). A second, independent null came from multiple sclerosis, where individual energy conservation management in 86 severely fatigued adults did not reduce fatigue versus an information-only control (CIS20r difference -0.81, 95% CI -3.71 to 2.11) and produced an unfavourable effect on the participation domain of social relations (0.19, 95% CI 0.03 to 0.35) (Blikman 2017). Cochrane found exercise therapy slightly better than adaptive pacing on fatigue at end of treatment (MD -2.00, 95% CI -3.57 to -0.43 on a 0-33 scale; 1 study, 305 participants) and at long-term follow-up (MD -2.50, 95% CI -4.16 to -0.84), both low certainty, with no quality-of-life or pain data reported for this comparison (Larun 2024). Against that, the physiological rationale is real: in the largest two-day cardiopulmonary exercise test study to date (84 ME/CFS participants versus 71 sedentary controls), the ME/CFS group failed to reproduce day-one measures on day two, with declines in work, exercise time, heart rate and oxygen pulse that did not occur in controls, and the pattern persisted in 55 case-control pairs matched for aerobic capacity, age and sex (Keller 2024). NICE guidance since 2021 recognises post-exertional malaise as a core symptom, allows diagnosis after 3 months, and calls for individual, tailored management by a multidisciplinary team in place of fixed incremental exercise programmes (Kingdon 2022). Both null trials tested specific structured protocols; neither tested symptom-triggered pacing as it is now described, and that gap — not a body of positive evidence — is what the grade reflects.</p>
+<p><b style="color:var(--ink)">Doses studied:</b> Interventions have been delivered through educational sessions plus activity diaries for monitoring, over weeks to months (Sanal-Hayes 2023). Adaptive pacing therapy in PACE was added to specialist medical care and assessed at 52 weeks (White 2011). The multiple sclerosis energy conservation programme was delivered individually with blinded assessments at 8, 16, 26 and 52 weeks (Blikman 2017). Newer approaches use wearable heart-rate or step monitoring, but have not been tested in adequately powered trials.</p>
+<p><b style="color:var(--ink)">Why this grade:</b> Only three randomised controlled trials appear in the scoping literature for ME/CFS, and the two adequately powered tests of formalised pacing protocols were both null: adaptive pacing therapy in PACE did not beat specialist medical care alone, and individual energy conservation management in multiple sclerosis did not beat an information-only control, with an unfavourable signal on one participation domain. The wider evidence base is small, heterogeneous, of poor-to-fair methodological quality, and includes two studies reporting a detrimental effect. Pacing is nonetheless recommended in current UK guidance and has a coherent physiological rationale in two-day exercise testing, which is why it is graded early rather than not_supported: the honest position is that pacing as now practised — symptom-triggered, built around post-exertional malaise — has not been adequately tested, while the structured protocols that have been tested did not work.</p></div></details>
+<details open><summary>Sources (7)</summary><div class="dbody"><ol class="cites"><li>
+<span class="cdir" style="background:var(--nul)" title="null"></span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/21334061/" data-pmid="21334061" rel="nofollow noopener" target="_blank">Comparison of adaptive pacing therapy, cognitive behaviour therapy, graded exercise therapy, and specialist medical care for chronic fatigue syndrome (PACE): a randomised trial.</a>
+<div class="cwho">White PD et al., 2011 · PMID 21334061 · null</div>
+<p class="cfind">Adaptive pacing therapy added to specialist medical care did not improve fatigue at 52 weeks compared with specialist medical care alone (0.7 points lower, 95% CI -0.9 to 2.3, p=0.38) or physical function (p=0.18) in 160 randomised participants; serious adverse reactions occurred in 2 of 159 (1%). The authors concluded adaptive pacing therapy is not an effective addition to specialist medical care.</p></li><li>
+<span class="cdir" style="background:var(--nul)" title="null"></span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/28528565/" data-pmid="28528565" rel="nofollow noopener" target="_blank">Effectiveness of energy conservation management on fatigue and participation in multiple sclerosis: A randomized controlled trial.</a>
+<div class="cwho">Blikman LJM et al., 2017 · PMID 28528565 · null</div>
+<p class="cfind">In 86 severely fatigued ambulant adults with MS randomised to individual energy conservation management or an information-only control (76 analysed), no effect was found on fatigue (overall CIS20r difference between groups -0.81, 95% CI -3.71 to 2.11) or on four of five participation domains; an overall unfavourable effect was found in the energy conservation group on the participation domain of social relations (0.19, 95% CI 0.03 to 0.35).</p></li><li>
+<span class="cdir" style="background:var(--mixed)" title="mixed"></span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/37838675/" data-pmid="37838675" rel="nofollow noopener" target="_blank">A scoping review of 'Pacing' for management of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): lessons learned for the long COVID pandemic.</a>
+<div class="cwho">Sanal-Hayes NEM et al., 2023 · PMID 37838675 · mixed</div>
+<p class="cfind">Of 177 titles and abstracts reviewed, 17 studies were included (three RCTs, one uncontrolled trial, one interventional case series, and twelve observational, cross-sectional or analytical studies). Eleven reported benefits of pacing, four reported no effect, and two reported a detrimental effect versus control; designs and outcomes were highly variable with poor-to-fair methodological quality, and the authors concluded the literature is insufficient to inform treatment practice.</p></li><li>
+<span class="cdir" style="background:var(--neg)" title="negative"></span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/39697147/" data-pmid="39697147" rel="nofollow noopener" target="_blank">Exercise therapy for chronic fatigue syndrome.</a>
+<div class="cwho">Larun L et al. (Cochrane), 2024 · PMID 39697147 · negative</div>
+<p class="cfind">In the single trial comparing the two, exercise therapy slightly reduced fatigue relative to adaptive pacing at end of treatment (MD -2.00, 95% CI -3.57 to -0.43 on a 0-33 scale; 305 participants) and at long-term follow-up (MD -2.50, 95% CI -4.16 to -0.84; 307 participants), both low-certainty evidence; no studies reported quality of life or pain for this comparison.</p></li><li>
+<span class="cdir" style="background:var(--pos)" title="positive"></span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/38965566/" data-pmid="38965566" rel="nofollow noopener" target="_blank">Cardiopulmonary and metabolic responses during a 2-day CPET in myalgic encephalomyelitis/chronic fatigue syndrome: translating reduced oxygen consumption to impairment status to treatment considerations.</a>
+<div class="cwho">Keller B et al., 2024 · PMID 38965566 · positive</div>
+<p class="cfind">In 84 ME/CFS participants and 71 sedentary controls performing two cardiopulmonary exercise tests 24 hours apart, the ME/CFS group failed to reproduce day-one values on day two with significant declines at peak exertion in work, exercise time, heart rate and oxygen pulse, while controls did not; the pattern persisted in 55 case-control pairs matched for aerobic capacity, age and sex, indicating fitness level does not predispose to exertion intolerance. This is a physiology study establishing that exertion intolerance is measurable; it does not test whether pacing improves outcomes.</p></li><li>
+<span class="cdir" style="background:var(--pos)" title="positive"></span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/22181560/" data-pmid="22181560" rel="nofollow noopener" target="_blank">Pacing as a strategy to improve energy management in myalgic encephalomyelitis/chronic fatigue syndrome: a consensus document.</a>
+<div class="cwho">Goudsmit EM, Nijs J, Jason LA, Wallman KE, 2011 · PMID 22181560 · positive</div>
+<p class="cfind">A consensus review describing how pacing is adapted to individual ability and preference, proposing that it can help stabilise the condition and avoid post-exertional malaise; the authors note pacing has been consistently rated as one of the most helpful strategies in surveys conducted by patient groups, and state the review is a response to the paucity of information on pacing in the scientific literature.</p></li><li>
+<span class="cdir" style="background:var(--pos)" title="positive"></span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/36553962/" data-pmid="36553962" rel="nofollow noopener" target="_blank">What Primary Care Practitioners Need to Know about the New NICE Guideline for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome in Adults.</a>
+<div class="cwho">Kingdon C et al., 2022 · PMID 36553962 · positive</div>
+<p class="cfind">Summarises the October 2021 NICE guideline, which recognises post-exertional malaise as a core diagnostic symptom, allows diagnosis after 3 months, and recommends individual, tailored management by a multi-disciplinary team, while stating that programmes based on fixed incremental increases in physical activity or exercise should not be offered.</p></li></ol></div></details>
+</div>
+
+<h2>Where this appears</h2>
+<ul class="rows"><li><a href="/c/fatigue"><svg class="th" width="42" height="10" role="img" aria-label="Early evidence"><line x1="2" y1="5" x2="40" y2="5" stroke="#C46BB4" stroke-width="1.2" stroke-linecap="round" opacity=".9"/></svg><span>Fatigue &amp; low energy</span><span class="g">Early evidence</span></a></li></ul>
+<div class="crisis"><b>This page is information, not medical advice.</b> It does not know your history, medications or risks — talk to a clinician before acting on anything here. In crisis? Call or text <b>988</b> (Veterans: press 1). Immediate danger: call <b>911</b>.</div>
+<footer class="site">Every connection on ManyRoots is cited to primary research and adversarially reviewed before it appears — or it does not appear. <a href="/how-we-grade">How we grade</a>.</footer>
+</div>
+</body></html>

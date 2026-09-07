@@ -1,0 +1,4 @@
+# Holding pattern until counsel clears the name. Flip INDEXABLE to true in
+# build-static-pages.js and rebuild to open the site to search engines.
+User-agent: *
+Disallow: /

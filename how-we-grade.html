@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>How ManyRoots grades evidence — the method</title>
+<meta name="description" content="How ManyRoots grades health evidence: what each grade means, how every citation is verified against the primary research, what the adversarial review actually caught, and where the method can be wrong.">
+<link rel="canonical" href="https://manyroots.org/how-we-grade">
+<meta property="og:title" content="How ManyRoots grades evidence">
+<meta property="og:description" content="How ManyRoots grades health evidence: what each grade means, how every citation is verified against the primary research, what the adversarial review actually caught, and where the method can be wrong.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"How ManyRoots grades evidence","description":"How ManyRoots grades health evidence: what each grade means, how every citation is verified against the primary research, what the adversarial review actually caught, and where the method can be wrong.","url":"https://manyroots.org/how-we-grade","isAccessibleForFree":true}</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --night:#0E1512; --night2:#121A16; --card:#1A241E; --line:#28352D;
+  --ink:#E6EAE3; --muted:#96A199; --faint:#5C6B61; --ivory:#E8E2D0; --accent:#D8C9A3;
+  --strong:#7FCBA4; --moderate:#8FB6EA; --early:#D8C9A3; --traditional:#C9A9D4; --nots:#D98B80;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--ink);font-family:'Instrument Sans',system-ui,sans-serif;line-height:1.62}
+.wrap{max-width:760px;margin:0 auto;padding:64px 24px 96px}
+.eyebrow{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 14px}
+h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(32px,6vw,50px);color:var(--ivory);margin:0 0 14px;line-height:1.08;text-wrap:balance}
+.standfirst{font-size:19px;color:var(--ink);margin:0 0 10px;max-width:60ch}
+.sub{color:var(--muted);max-width:64ch;margin:0 0 44px}
+h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px;color:var(--ivory);margin:56px 0 10px;text-wrap:balance}
+h3{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);font-weight:600;margin:34px 0 10px}
+p{margin:0 0 16px;max-width:64ch}
+.lede{color:var(--muted);max-width:66ch}
+strong{color:var(--ivory);font-weight:600}
+.rule{border-left:3px solid var(--accent);background:var(--card);border-radius:0 12px 12px 0;padding:20px 26px;margin:0 0 8px}
+.rule p{margin:0;font-family:'Fraunces',Georgia,serif;font-size:21px;color:var(--ivory);line-height:1.42}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0 8px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.kpi .n{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;font-size:30px;font-weight:500;color:var(--ivory);line-height:1.05}
+.kpi .l{font-size:13px;font-weight:600;margin-top:5px}
+.kpi .d{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.45}
+.gtable{border-top:1px solid var(--line);margin:18px 0 0}
+.grow{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line);align-items:start}
+.gname{display:flex;flex-direction:column;gap:7px}
+.gname b{font-size:14px;font-weight:600}
+.gname .ct{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--faint)}
+.gdef{font-size:14.5px;color:var(--muted);margin:0}
+.g-strong b{color:var(--strong)} .g-moderate b{color:var(--moderate)} .g-early b{color:var(--early)}
+.g-traditional b{color:var(--traditional)} .g-not_supported b{color:var(--nots)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:18px 0 0}
+.steps li{counter-increment:s;position:relative;padding:0 0 20px 52px;max-width:64ch}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;background:var(--card);border:1px solid var(--line);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:14px;display:flex;align-items:center;justify-content:center}
+.steps b{display:block;color:var(--ivory);margin-bottom:3px;font-size:15px}
+.steps p{margin:0;color:var(--muted);font-size:14.5px}
+.catch{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 18px;margin:0 0 11px}
+.catch .tag{display:inline-block;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--night);background:var(--accent);padding:2px 9px;border-radius:999px;margin-bottom:9px}
+.catch p{margin:0 0 8px;font-size:14.5px;color:var(--ink)}
+.catch .where{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--faint);margin:0}
+.split{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 20px 16px;margin:14px 0}
+.split .sname{font-family:'Fraunces',Georgia,serif;font-size:17px;color:var(--ivory);margin:0 0 6px}
+.split .sr{display:flex;align-items:center;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+.split .sr:first-of-type{border-top:none}
+.split .sr .c{color:var(--muted);flex:1}
+.split .sr .v{font-weight:600;white-space:nowrap}
+.no{list-style:none;padding:0;margin:16px 0 0}
+.no li{padding:9px 0 9px 30px;border-top:1px solid var(--line);position:relative;color:var(--muted);font-size:14.5px;max-width:64ch}
+.no li::before{content:"✕";position:absolute;left:4px;top:9px;color:var(--nots);font-size:13px}
+.no li b{color:var(--ink)}
+.limits li{padding:9px 0 9px 30px;border-top:1px solid var(--line);position:relative;color:var(--muted);font-size:14.5px;list-style:none;max-width:64ch}
+.limits{padding:0;margin:16px 0 0}
+.limits li::before{content:"—";position:absolute;left:4px;top:9px;color:var(--faint)}
+.limits li b{color:var(--ink)}
+.crisis{background:#2A1E20;border:1px solid #5A3A3E;border-radius:12px;padding:18px 22px;margin:44px 0 0;color:#E3C4BE;font-size:14.5px}
+.crisis b{color:#F0D5D0}
+.foot{border-top:1px solid var(--line);margin-top:44px;padding-top:20px;font-size:13px;color:var(--faint);max-width:66ch}
+@media (max-width:560px){.grow{grid-template-columns:1fr;gap:8px}}
+
+header.site{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:30px}
+header.site a.wm{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:20px;color:var(--ivory);text-decoration:none}
+header.site nav{margin-left:auto;font-size:13.5px}
+header.site nav a{color:var(--muted);text-decoration:none}
+header.site nav a:hover{color:var(--ink)}
+</style>
+</head><body>
+<div class="wrap">
+<header class="site"><a class="wm" href="/">ManyRoots</a><nav><a href="/">All conditions</a><a href="/map">The map</a></nav></header>
+<p class="eyebrow">ManyRoots · the method</p>
+<h1>How we grade</h1>
+<p class="standfirst">Every connection on this site carries a grade. This page explains exactly what those grades mean, how they are decided, and how often we get it wrong on the first try.</p>
+<p class="sub">If you only read one line: a connection appears on ManyRoots because someone checked the primary research and it survived an adversarial review — or it does not appear at all.</p>
+
+<div class="rule"><p>Cited, or absent. There is no third option.</p></div>
+<p class="lede" style="margin-top:14px">There is no “traditionally believed to support” tier with nothing behind it, and no connection that exists because a product needed one. If we could not find and verify the evidence, the connection is simply not drawn.</p>
+
+<h2>The five grades</h2>
+<p class="lede">A connection’s <em>thickness and pattern</em> carry its grade, so you can read the strength of the evidence before you read a word of text.</p>
+<div class="gtable">
+<div class="grow g-strong">
+  <div class="gname"><svg width="46" height="10" aria-hidden="true"><line x1="2" y1="5" x2="44" y2="5" stroke="#D8C9A3" stroke-width="3" stroke-linecap="round" opacity="0.9"/></svg><b>Strong</b><span class="ct">24 connections</span></div>
+  <p class="gdef">Multiple randomised trials or meta-analyses agreeing, or first-line status in a clinical practice guideline.</p>
+</div>
+<div class="grow g-moderate">
+  <div class="gname"><svg width="46" height="10" aria-hidden="true"><line x1="2" y1="5" x2="44" y2="5" stroke="#D8C9A3" stroke-width="2" stroke-linecap="round" opacity="0.9"/></svg><b>Moderate</b><span class="ct">83 connections</span></div>
+  <p class="gdef">Real trial or meta-analysis evidence, positive overall, but modest in size or mixed across studies.</p>
+</div>
+<div class="grow g-early">
+  <div class="gname"><svg width="46" height="10" aria-hidden="true"><line x1="2" y1="5" x2="44" y2="5" stroke="#D8C9A3" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/></svg><b>Early</b><span class="ct">69 connections</span></div>
+  <p class="gdef">Small, few, or preliminary human trials only. Interesting, not established.</p>
+</div>
+<div class="grow g-traditional">
+  <div class="gname"><svg width="46" height="10" aria-hidden="true"><line x1="2" y1="5" x2="44" y2="5" stroke="#D8C9A3" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.9"/></svg><b>Traditional use</b><span class="ct">9 connections</span></div>
+  <p class="gdef">Documented traditional or historical use, but no adequate human trial for this condition. Shown honestly rather than dressed up or left out.</p>
+</div>
+<div class="grow g-not_supported">
+  <div class="gname"><svg width="46" height="10" aria-hidden="true"><line x1="2" y1="5" x2="44" y2="5" stroke="#D8C9A3" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="2 7" opacity="0.9"/></svg><b>Not supported</b><span class="ct">15 connections</span></div>
+  <p class="gdef">Adequate evidence exists and it is null or negative, or guidelines recommend against it. These stay visible — that is the point.</p>
+</div>
+</div>
+<p class="lede" style="margin-top:18px"><strong>When two grades are arguable, we take the lower one.</strong> That rule is applied deliberately and it is why several popular things on this site are graded lower than you will see them graded elsewhere.</p>
+
+<h2>How a connection gets made</h2>
+<ol class="steps">
+<li><b>Research</b><p>An agent researches one intervention for one condition directly against PubMed in a single session. Nothing is written from memory, and every number quoted has to come from an abstract actually retrieved.</p></li>
+<li><b>Adversarial review</b><p>A second, independent agent is told to refute the first. It resolves every cited identifier back to the real paper, checks that the numbers match, searches specifically for null and negative trials the first agent may have skipped, and challenges the grade in both directions.</p></li>
+<li><b>Verdict</b><p>Pass, fixed, or fail. Fixed entries ship corrected. <strong>A failed entry is not a to-do item — it is an absent connection.</strong> The connection does not get drawn.</p></li>
+<li><b>Recorded</b><p>Every verdict and every correction is stored with the entry, which is how the numbers on this page are produced rather than claimed.</p></li>
+</ol>
+
+<h2>What that process actually catches</h2>
+<p class="lede">These are real corrections from the current data, not illustrations.</p>
+<div class="catch"><span class="tag">Invented numbers, deleted</span><p>A researcher wrote that a major Lancet trial of sleep restriction therapy showed effect sizes at 3 and 12 months. The paper reports only its 6-month endpoint. Both numbers were fabricated; the verifier removed them.</p><p class="where">Sleep · sleep restriction therapy · PMID 37573859</p></div>
+<div class="catch"><span class="tag">Publication bias, caught</span><p>A duloxetine entry cited a positive back-pain trial and omitted the negative trial from the same authors, the same sponsor and the same drug programme, in which duloxetine did not beat placebo at endpoint. The negative trial was added.</p><p class="where">Chronic pain · duloxetine · PMID 19469829</p></div>
+<div class="catch"><span class="tag">Grade lowered</span><p>Ramelteon was graded moderate on a 2017 guideline. The verifier found the 2023 European Insomnia Guideline, which names it as not recommended at the highest evidence level, and the grade dropped to not supported.</p><p class="where">Sleep · ramelteon · PMID 38016484</p></div>
+<div class="catch"><span class="tag">Grade raised</span><p>Skullcap was written up as having no human sleep trial at all. That was false — trials existed. The verifier corrected the claim and moved the grade up. The check is not biased toward pessimism; it is biased toward what is there.</p><p class="where">Sleep · skullcap</p></div>
+<div class="catch"><span class="tag">Safety claim refuted</span><p>A wild lettuce entry stated that human harm data did not exist. A published case report of poisoning did exist. The false reassurance was removed and the case report added.</p><p class="where">Sleep · wild lettuce · PMID 21686920</p></div>
+<div class="catch"><span class="tag">Overclaim corrected</span><p>Arnica was graded early, implying preliminary human support for chronic pain. No placebo-controlled trial of topical arnica exists in any chronic pain condition. It was moved to traditional use.</p><p class="where">Chronic pain · arnica</p></div>
+
+<h2>The numbers, right now</h2>
+<div class="kpis">
+<div class="kpi"><div class="n">200</div><div class="l">graded connections</div><div class="d">across 9 conditions</div></div>
+<div class="kpi"><div class="n">1477</div><div class="l">citations</div><div class="d">each resolved to the actual paper</div></div>
+<div class="kpi"><div class="n">34%</div><div class="l">of citations are null or negative</div><div class="d">496 of 1477 — evidence of no effect, or against</div></div>
+<div class="kpi"><div class="n">95%</div><div class="l">of entries were corrected</div><div class="d">190 of 200 needed a fix at review</div></div>
+</div>
+<p class="lede" style="margin-top:18px">Those last two are the ones worth sitting with. Roughly <strong>a third of everything cited here is evidence that something did not work</strong> — a profile no marketing page has, because a marketing page has no reason to go looking. And <strong>190 of 200 entries needed correcting</strong> before they were fit to publish, which is the honest cost of doing this properly and the reason the review step is not optional.</p>
+
+<h2>The same thing can be graded differently</h2>
+<p class="lede">A grade belongs to a <em>connection</em>, not to a substance. The evidence for something can be decent in one condition and absent in another, so the same node carries a different verdict on each connection.</p>
+<div class="split">
+<p class="sname">Vitamin D</p>
+<div class="sr"><span class="c">for blood sugar &amp; type 2 diabetes</span><span class="v" style="color:var(--moderate)">Moderate</span></div>
+<div class="sr"><span class="c">for depression &amp; low mood</span><span class="v" style="color:var(--moderate)">Moderate</span></div>
+<div class="sr"><span class="c">for fatigue &amp; low energy</span><span class="v" style="color:var(--early)">Early</span></div>
+<div class="sr"><span class="c">for gut &amp; digestion</span><span class="v" style="color:var(--early)">Early</span></div>
+<div class="sr"><span class="c">for chronic pain</span><span class="v" style="color:var(--not_supported)">Not supported</span></div>
+</div>
+<div class="split">
+<p class="sname">Omega-3 fatty acids</p>
+<div class="sr"><span class="c">for anxiety &amp; stress</span><span class="v" style="color:var(--moderate)">Moderate</span></div>
+<div class="sr"><span class="c">for depression &amp; low mood</span><span class="v" style="color:var(--moderate)">Moderate</span></div>
+<div class="sr"><span class="c">for high blood pressure</span><span class="v" style="color:var(--moderate)">Moderate</span></div>
+<div class="sr"><span class="c">for chronic pain</span><span class="v" style="color:var(--not_supported)">Not supported</span></div>
+</div>
+<p class="lede">This is the whole reason the site is built as a web rather than a list of products. <strong>“Does it work?” is not a question anything can answer on its own</strong> — it only means something once you finish the sentence with a condition.</p>
+
+<h2>What ManyRoots does not do</h2>
+<ul class="no">
+<li><b>We sell nothing.</b> No products, no supplements, no affiliate links, no sponsored placements, no brand names on ingredient pages.</li>
+<li><b>We do not rank by popularity.</b> A connection’s weight comes from its evidence, never from how many people search for it or how large its market is.</li>
+<li><b>We do not hide the failures.</b> Widely used things that the evidence does not support stay on the map, clearly labelled. Removing them would make the map a sales tool.</li>
+<li><b>We do not give you a plan.</b> No personalised protocols, no “your journey”, no dosing instructions dressed as advice.</li>
+<li><b>We do not diagnose.</b> ManyRoots is a map of evidence, not a clinician.</li>
+</ul>
+
+<h2>Where this can be wrong</h2>
+<p class="lede">A page about rigour that claims none of its own limits is not being rigorous. Here are the real ones.</p>
+<ul class="limits">
+<li><b>Grades are a snapshot.</b> Evidence moves. A grade reflects the literature at the date it was checked, and some of these will be out of date before they are revisited.</li>
+<li><b>Abstract-level checking has a ceiling.</b> Verification resolves citations and confirms reported figures against published abstracts. It does not re-analyse raw trial data or detect fraud inside a study that was published cleanly.</li>
+<li><b>Absence of evidence is not evidence of absence.</b> “Traditional use” and “not supported” mean the trials are missing or came out null — not that a thing is proven useless. Several genuinely useful things are under-studied because nobody could profit from studying them.</li>
+<li><b>Averages hide people.</b> Every effect size here is an average across a trial population. Individuals vary, and a modest average can still contain people who responded very well and people who got nothing.</li>
+<li><b>Our scope is narrow by choice.</b> Only a small number of conditions are covered so far. A connection that is missing may simply not have been researched yet.</li>
+<li><b>Machines drafted this, and machines check it.</b> The review step catches a great deal — 190 corrections so far — but it is not a substitute for clinical peer review, and errors will survive it. If you find one, we want to be told.</li>
+</ul>
+
+<div class="crisis"><b>This page is information, not medical advice.</b> It cannot examine you, and it does not know your history, your medications or your risks — talk to a clinician before acting on anything here. If you are in crisis, call or text <b>988</b> (Veterans: press 1). If you are in immediate danger, call <b>911</b>.</div>
+
+<p class="foot">Generated from ManyRoots’ live evidence base — 200 connections, 1477 citations, 95 safety interrupts across insomnia, chronic pain, blood sugar & type 2 diabetes, gut & digestion, high blood pressure, migraine & headache, anxiety & stress, depression & low mood, fatigue & low energy. Every figure on this page is computed from that data rather than written by hand, so it cannot drift away from what the site actually contains.</p>
+</div></body></html>
