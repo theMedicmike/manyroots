@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/gut-digestion">For gut &amp; digestion</a></h4>
+
 <p style="margin:8px 0 12px">Probiotics are live bacteria sold as capsules, powders, drinks and yoghurts. Averaged across a lot of trials, people with IBS who take them do somewhat better than people taking a dummy pill, and side effects have been uncommon - but the quality of that research is weak and the results swing widely depending on which bacteria were used. Here is the part that matters when you are standing in a shop: almost no product on the shelf has been tested in a trial of its own, so a good result for one specific tested strain tells you very little about the bottle in your hand.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>In IBS trials probiotics have been well tolerated: across 55 randomised trials and more than 7,000 patients, the risk of any adverse event was not significantly higher than placebo, and individual trials report no difference in adverse events. That reassurance is weaker than it looks, because harms reporting in this literature is poor - 28% of 384 microbiota-intervention RCTs reported no harms data at all and 80% did not report serious adverse events per group. Transient gas, bloating and loosened stool are the commonly described nuisance effects, and products that also contain prebiotic fibres (inulin, fructo-oligosaccharides) can aggravate bloating in IBS, which is why the ingredient list matters as much as the strain. Beyond IBS, a Lancet trial of probiotic prophylaxis in predicted severe acute pancreatitis found higher mortality with probiotics (24/152, 16%) than placebo (9/144, 6%; RR 2.53, 95% CI 1.22-5.25) and nine cases of bowel ischaemia, eight fatal, versus none - evidence that these are biologically active organisms, not inert, in people who are critically ill. Probiotic supplements are not licensed medicines, so actual strain identity and viable counts depend entirely on the manufacturer.</p>
@@ -118,34 +133,36 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>The largest systematic review (82 RCTs, 10,332 adults) found that some strains and combinations outperformed placebo for global symptoms, abdominal pain and bloating, but certainty of evidence by GRADE was moderate for only one grouping (Escherichia strains) and low to very low across almost every other analysis, and only 24 of the 82 trials were at low risk of bias in every domain. An earlier review by the same group (53 RCTs, 5,545 patients) concluded that which particular combination, species or strain is effective remains, for the most part, unclear. Individual trials diverge sharply: a multi-strain preparation in IBS-D reduced total IBS-SSS by 165.8 points versus 105.6 on placebo (p = 0.005), whereas in a 2x2 factorial trial a multistrain probiotic raised faecal Bifidobacterium abundance (9.1 vs 8.8 rRNA genes/g, p = 0.019) while producing no symptom benefit (IBS-SSS 207 with probiotic vs 192 with placebo, p = 0.721). Bifidobacterium longum NCC3001 lowered depression scores (14/22 vs 7/22, p = 0.04) but had no significant effect on IBS symptoms or anxiety. Pooling across strains is therefore misleading in both directions: it can manufacture an average benefit no single product has demonstrated, and it can bury a genuine effect of one strain in the noise of others. Safety reporting is a further weakness - in a review of 384 microbiota-modifying RCTs, 28% reported no harms data at all and 80% did not report serious adverse events per study group.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> No consensus dose exists, because dose and effect are strain-dependent. The trials behind this entry ran 4-8 weeks and tested defined preparations, not retail products: Bifidobacterium longum NCC3001 for 6 weeks, a multi-strain Lactobacillus / Bifidobacterium / Streptococcus thermophilus blend for 8 weeks, and a multistrain formulation for 4 weeks. In the 2023 review the clearest signal for global symptoms (still only moderate certainty) was for Escherichia strains, with lower-certainty signals for Lactobacillus strains and Lactobacillus plantarum 299V, and for abdominal pain for Saccharomyces cerevisiae I-3856 and Bifidobacterium strains.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Eighty-two randomised trials in 10,332 adults have been pooled, and some strains outperformed placebo for global symptoms, abdominal pain or bloating with no excess of adverse events, which meets the bar for moderate. It does not reach strong: in that same review GRADE certainty was moderate for only one grouping (Escherichia strains) and low to very low across almost every other analysis, only 24 of the 82 trials were at low risk of bias in all domains, and well-conducted trials are null. Critically, this grade describes the class in aggregate and does not transfer to any specific commercial product - benefit in the trial literature is strain- and formulation-specific, and reviewers have repeatedly stated they cannot identify which combination, species or strain is responsible.</p></div></details>
+
+<div class="ebase"><span><b>7</b> sources</span><span><b>7</b> trial-level or better</span><span><b>3</b> null or negative</span><span><b>3</b> mixed</span><span>2008–2023</span></div>
 <details open><summary>Sources (7)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/37541528/" data-pmid="37541528" rel="nofollow noopener" target="_blank">Efficacy of Probiotics in Irritable Bowel Syndrome: Systematic Review and Meta-analysis.</a>
-<div class="cwho">Goodoory, Khasawneh, Black, Quigley, Moayyedi &amp; Ford, 2023 · PMID 37541528 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Goodoory, Khasawneh, Black, Quigley, Moayyedi &amp; Ford, 2023 · PMID 37541528 · mixed</div>
 <p class="cfind">82 RCTs, 10,332 patients; only 24 at low risk of bias across all domains. For global symptoms there was moderate certainty for Escherichia strains, low certainty for Lactobacillus strains and L. plantarum 299V, and very low certainty for combination probiotics and Bacillus strains; the authors conclude certainty by GRADE was low to very low across almost all analyses. Across 55 trials and more than 7,000 patients the relative risk of any adverse event was not significantly higher with probiotics.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/30294792/" data-pmid="30294792" rel="nofollow noopener" target="_blank">Systematic review with meta-analysis: the efficacy of prebiotics, probiotics, synbiotics and antibiotics in irritable bowel syndrome.</a>
-<div class="cwho">Ford, Harris, Lacy, Quigley &amp; Moayyedi, 2018 · PMID 30294792 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Ford, Harris, Lacy, Quigley &amp; Moayyedi, 2018 · PMID 30294792 · mixed</div>
 <p class="cfind">53 probiotic RCTs in 5,545 IBS patients. Particular combinations, species or strains appeared to benefit global symptoms and abdominal pain, but the authors state it was not possible to draw definitive conclusions and that which combination, species or strain is effective 'remains, for the most part, unclear'; adverse events were no more common with probiotics.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/28625832/" data-pmid="28625832" rel="nofollow noopener" target="_blank">A Diet Low in FODMAPs Reduces Symptoms in Patients With Irritable Bowel Syndrome and A Probiotic Restores Bifidobacterium Species: A Randomized Controlled Trial.</a>
-<div class="cwho">Staudacher, Lomer, Farquharson, et al., 2017 · PMID 28625832 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Staudacher, Lomer, Farquharson, et al., 2017 · PMID 28625832 · null</div>
 <p class="cfind">104 patients, 4 weeks, 2x2 factorial. The multistrain probiotic significantly increased faecal Bifidobacterium (9.1 vs 8.8 rRNA genes/g, p = 0.019) but produced no symptom benefit: mean IBS-SSS 207 with probiotic vs 192 with placebo (p = 0.721), with no significant interaction with diet for adequate symptom relief (p = 0.52). The symptom benefit in this trial came from the low-FODMAP diet, not the probiotic.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/28483500/" data-pmid="28483500" rel="nofollow noopener" target="_blank">Probiotic Bifidobacterium longum NCC3001 Reduces Depression Scores and Alters Brain Activity: A Pilot Study in Patients With Irritable Bowel Syndrome.</a>
-<div class="cwho">Pinto-Sanchez, Hall, Ghajar, et al., 2017 · PMID 28483500 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Pinto-Sanchez, Hall, Ghajar, et al., 2017 · PMID 28483500 · mixed</div>
 <p class="cfind">Pilot trial in 44 adults with IBS-D or mixed-stool IBS and mild-to-moderate anxiety or depression, 6 weeks. Depression scores fell by 2 or more points in 14/22 on the probiotic vs 7/22 on placebo (p = 0.04), but the strain had no significant effect on anxiety or on IBS symptoms themselves.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/33652763/" data-pmid="33652763" rel="nofollow noopener" target="_blank">The Effectiveness and Safety of Multi-Strain Probiotic Preparation in Patients with Diarrhea-Predominant Irritable Bowel Syndrome: A Randomized Controlled Study.</a>
-<div class="cwho">Skrzydlo-Radomanska, Prozorow-Krol, Cichoz-Lach, et al., 2021 · PMID 33652763 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Skrzydlo-Radomanska, Prozorow-Krol, Cichoz-Lach, et al., 2021 · PMID 33652763 · positive</div>
 <p class="cfind">Randomised double-blind trial in adults with IBS-D over 8 weeks: total IBS-SSS fell 165.8 +/- 78.9 points on the multi-strain probiotic vs 105.6 +/- 60.2 on placebo (p = 0.005), with improvement on the Global Improvement Scale at 4 weeks (p = 0.04) and 8 weeks (p = 0.003); the occurrence of adverse events did not differ between groups. The result belongs to this one Lactobacillus / Bifidobacterium / Streptococcus thermophilus preparation, not to probiotics generally.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/30014150/" data-pmid="30014150" rel="nofollow noopener" target="_blank">Harms Reporting in Randomized Controlled Trials of Interventions Aimed at Modifying Microbiota: A Systematic Review.</a>
-<div class="cwho">Bafeta, Koh, Riveros &amp; Ravaud, 2018 · PMID 30014150 · negative</div>
+<div class="cwho"><span class="ctype top">Systematic review</span>Bafeta, Koh, Riveros &amp; Ravaud, 2018 · PMID 30014150 · negative</div>
 <p class="cfind">Of 384 RCTs of probiotics, prebiotics and synbiotics, 106 (28%) reported no harms data at all, 142 (37%) reported no safety results, and 309 (80%) did not give the number of serious adverse events per study group; 375 (98%) omitted adverse-event definitions, withdrawals due to harms, or event counts with denominators. The authors conclude these interventions cannot broadly be called safe in the absence of reported safety data.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/18279948/" data-pmid="18279948" rel="nofollow noopener" target="_blank">Probiotic prophylaxis in predicted severe acute pancreatitis: a randomised, double-blind, placebo-controlled trial.</a>
-<div class="cwho">Besselink, van Santvoort, Buskens, et al., 2008 · PMID 18279948 · negative</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Besselink, van Santvoort, Buskens, et al., 2008 · PMID 18279948 · negative</div>
 <p class="cfind">298 patients with predicted severe acute pancreatitis randomised to a multispecies probiotic or placebo. Infectious complications were no less frequent with probiotics (46/152, 30% vs 41/144, 28%; RR 1.06, 95% CI 0.75-1.51), but 24 (16%) died in the probiotic group vs 9 (6%) on placebo (RR 2.53, 95% CI 1.22-5.25), and nine probiotic patients developed bowel ischaemia, eight fatally, versus none on placebo (p = 0.004). The authors conclude probiotic prophylaxis should not be given to these patients.</p></li></ol></div></details>
 </div>
 

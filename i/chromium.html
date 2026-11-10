@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/blood-sugar">For blood sugar &amp; type 2 diabetes</a></h4>
+
 <p style="margin:8px 0 12px">Chromium is a trace mineral sold on the promise of steadier blood sugar. When researchers pool all the trials, people with type 2 diabetes show a small average drop in blood sugar, but that average leans on older, weaker studies; the best-run trials in Western countries found nothing, and the one careful trial in people with prediabetes found no benefit at all. No study has ever checked whether it prevents any of the things diabetes actually does to people. It is a low-priority supplement for most people, and very high doses have been linked to rare but serious kidney and muscle harm.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Chromium is not a substitute for prescribed glucose-lowering medication. Nothing on this page is a reason to stop, reduce or delay a prescribed drug; any change belongs to the prescriber. At trial doses up to 1,000 ug/day for up to 6 months, adverse events did not differ from placebo (PMID 17506119, n=447 at 600 ug/day with biotin; PMID 20634174 at 500-1,000 ug/day). Formulation matters: chromium picolinate, chromium chloride and yeast-based forms behaved differently across meta-analyses (PMID 25971249), and a 2004 review raised specific safety questions about the picolinate form (PMID 14983576). Check the label for biotin. The largest positive chromium trial on this page used chromium combined with 2 mg of biotin (PMID 17506119), and many blood-sugar products pair the two. Biotin is not dangerous in itself, but it interferes with the biotin-based immunoassays hospitals use: in sandwich-format assays it causes negative interference, which can falsely LOWER a cardiac troponin result and mask a heart attack, and it distorts thyroid tests, mimicking an overactive thyroid (PMID 35953126, PMID 31665256). If you take biotin in any supplement, tell the emergency department, your cardiologist and the lab - and say it even if nobody asks. Many labs simply ask that biotin be paused for a period before blood is drawn (PMID 30582902); your clinician will say how long.</p>
@@ -118,42 +133,46 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>Pooled analyses are inconsistent and quality-dependent. Balk's 2007 systematic review of 41 RCTs found HbA1c -0.6% (95% CI -0.9 to -0.2) and fasting glucose -1.0 mmol/L (-1.4 to -0.5) in type 2 diabetes but no benefit in people without diabetes, with larger effects clustering in poor-quality trials; Yin and Phung's 2015 meta-analysis of 14 RCTs (n=875, 8-24 weeks) found no significant A1C effect for chromium picolinate, chromium yeast or brewer's yeast, while Asbaghi 2020 (28 trials, PMID 32730903) reported HbA1c -0.71% with extreme heterogeneity (I2 99.8% for fasting glucose). The positive signal traces largely to a single RCT in China that randomized 180 people and contributed 155 diabetic subjects to the pooled data, in which 1,000 ug/day chromium picolinate produced HbA1c 6.6% versus 8.5% on placebo at 4 months; Althuis 2002 noted that the remaining diabetic trial data (38 participants) did not replicate it. Two 6-month double-blind trials in Western patients with type 2 diabetes (chromium yeast 400 ug/day on oral agents, PMID 17303791; chromium picolinate 500-1,000 ug/day in insulin-treated patients, PMID 16505499, where A1C fell about 0.4% equally in all arms) found no difference versus placebo, and a 6-month crossover RCT in 59 adults with impaired fasting glucose, impaired glucose tolerance or metabolic syndrome found no change in fasting or 2-h glucose, insulin or HOMA-IR at 500 or 1,000 ug/day. One large positive trial exists but cannot be credited to chromium: Albarracin 2008 (n=447) gave chromium picolinate 600 ug combined with biotin 2 mg and reported HbA1c -0.54% with a significant difference versus placebo (P=0.03), so the biotin component is unaccounted for (PMID 17506119). No trial has measured progression to diabetes, cardiovascular events, kidney outcomes or death; every result is a surrogate. Population summary: established type 2 diabetes, mixed and probably small if any; prediabetes, null; healthy people, null.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 200-1,000 ug/day elemental chromium, mostly as chromium picolinate (also chromium chloride, chromium-enriched yeast 400 ug/day, and brewer's yeast), for 8 weeks to 6 months. 1,000 ug/day was the dose in the single strongly positive trial and also in the null insulin-treated and prediabetes trials.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> The low grade is not because the trials are few — there are more than forty — but because the positive pooled signal does not survive quality control. Balk's 2007 review found HbA1c -0.6% in type 2 diabetes while noting that larger effects clustered in poor-quality studies; Yin and Phung found no significant A1C effect at all; Althuis traced the diabetes signal to one Chinese trial that the remaining 38 diabetic participants did not replicate; and the two best-conducted 6-month double-blind trials in Western patients were null. The only dedicated randomized trial in prediabetes was null, and no trial anywhere has measured progression to diabetes, cardiovascular events, amputation, kidney failure or death — every result on this page is a surrogate number. Torn between moderate and early, the lower grade applies; for prevention in prediabetes specifically the evidence is null.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/treat-underlying-cause">Treating the underlying cause</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>9</b> sources</span><span><b>7</b> trial-level or better</span><span><b>7</b> null or negative</span><span><b>1</b> mixed</span><span>1997–2022</span></div>
 <details open><summary>Sources (9)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/17519436/" data-pmid="17519436" rel="nofollow noopener" target="_blank">Effect of chromium supplementation on glucose metabolism and lipids: a systematic review of randomized controlled trials.</a>
-<div class="cwho">Balk et al., 2007 · PMID 17519436 · mixed</div>
+<div class="cwho"><span class="ctype top">Systematic review</span>Balk et al., 2007 · PMID 17519436 · mixed</div>
 <p class="cfind">41 RCTs, almost half of poor quality: in type 2 diabetes chromium lowered HbA1c by -0.6% (95% CI -0.9 to -0.2) and fasting glucose by -1.0 mmol/L (-1.4 to -0.5) but not lipids; no benefit in people without diabetes; larger effects were more commonly observed in poor-quality studies and the authors stated that definitive claims cannot be made until the limitations in the current evidence are addressed.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25971249/" data-pmid="25971249" rel="nofollow noopener" target="_blank">Effect of chromium supplementation on glycated hemoglobin and fasting plasma glucose in patients with diabetes mellitus.</a>
-<div class="cwho">Yin &amp; Phung, 2015 · PMID 25971249 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Yin &amp; Phung, 2015 · PMID 25971249 · null</div>
 <p class="cfind">14 RCTs (n=875, 8-24 weeks) in type 2 diabetes: chromium picolinate, chromium yeast and brewer's yeast showed no statistically significant effect on A1C versus placebo; chromium chloride, chromium yeast and chromium picolinate showed no effect on fasting glucose, and only brewer's yeast lowered it, by -19.23 mg/dL (95% CI -35.30 to -3.16, n=137).</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/12081828/" data-pmid="12081828" rel="nofollow noopener" target="_blank">Glucose and insulin responses to dietary chromium supplements: a meta-analysis.</a>
-<div class="cwho">Althuis et al., 2002 · PMID 12081828 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Althuis et al., 2002 · PMID 12081828 · null</div>
 <p class="cfind">15 RCTs with adequate data (618 participants; 193 with type 2 diabetes, 425 healthy or with impaired glucose tolerance): no association between chromium and glucose or insulin in nondiabetic subjects; a single Chinese study of 155 diabetic subjects showed reduced glucose, insulin and HbA1c, but combined data from the other 38 diabetic subjects did not; data for diabetes judged inconclusive.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/17303791/" data-pmid="17303791" rel="nofollow noopener" target="_blank">Chromium treatment has no effect in patients with type 2 diabetes in a Western population: a randomized, double-blind, placebo-controlled trial.</a>
-<div class="cwho">Kleefstra et al., 2007 · PMID 17303791 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Kleefstra et al., 2007 · PMID 17303791 · null</div>
 <p class="cfind">6-month double-blind RCT of 400 ug/day chromium (as chromium yeast) in Western patients with type 2 diabetes on oral hypoglycaemic agents: no difference in change in A1C between chromium and placebo, and no difference in the secondary endpoints of lipids, BMI, blood pressure, body fat or insulin resistance.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/16505499/" data-pmid="16505499" rel="nofollow noopener" target="_blank">Chromium treatment has no effect in patients with poorly controlled, insulin-treated type 2 diabetes in an obese Western population: a randomized, double-blind, placebo-controlled trial.</a>
-<div class="cwho">Kleefstra et al., 2006 · PMID 16505499 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Kleefstra et al., 2006 · PMID 16505499 · null</div>
 <p class="cfind">6-month double-blind RCT in obese Western patients with type 2 diabetes, A1C above 8% and insulin requirements above 50 units/day, randomized to placebo or 500 or 1,000 ug/day chromium picolinate: in the per-protocol analysis (n=46) A1C fell by approximately 0.4% equally across all three groups, with no differences in lipids, BMI, blood pressure or insulin requirements.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/20634174/" data-pmid="20634174" rel="nofollow noopener" target="_blank">Chromium effects on glucose tolerance and insulin sensitivity in persons at risk for diabetes mellitus.</a>
-<div class="cwho">Ali et al., 2011 · PMID 20634174 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Ali et al., 2011 · PMID 20634174 · null</div>
 <p class="cfind">59 adults with impaired fasting glucose, impaired glucose tolerance or metabolic syndrome in a double-blind modified crossover trial of 6-month sequences of chromium picolinate 500 or 1,000 ug/day versus placebo: no change in glucose, insulin or HOMA-IR (all P&gt;.05) and no secondary outcome (including HbA1c, lipids, blood pressure and urinary microalbumin) improved; authors concluded chromium is unlikely to attenuate diabetes risk.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/9356027/" data-pmid="9356027" rel="nofollow noopener" target="_blank">Elevated intakes of supplemental chromium improve glucose and insulin variables in individuals with type 2 diabetes.</a>
-<div class="cwho">Anderson et al., 1997 · PMID 9356027 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Anderson et al., 1997 · PMID 9356027 · positive</div>
 <p class="cfind">180 people treated for type 2 diabetes in China randomized to placebo, 200 ug/day or 1,000 ug/day chromium picolinate: at 4 months HbA1c was 8.5% (placebo) vs 7.5% (200 ug) vs 6.6% (1,000 ug); fasting glucose 8.8 vs 7.1 mmol/L and 2-h glucose 12.3 vs 10.5 mmol/L in the 1,000 ug group; the single trial driving most positive pooled estimates.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/17725434/" data-pmid="17725434" rel="nofollow noopener" target="_blank">New medications which decrease levothyroxine absorption.</a>
-<div class="cwho">John-Kalarickal et al., 2007 · PMID 17725434 · negative</div>
+<div class="cwho"><span class="ctype">Clinical trial</span>John-Kalarickal et al., 2007 · PMID 17725434 · negative</div>
 <p class="cfind">Controlled crossover study in 7 normal volunteers given 1 mg levothyroxine sodium alone or co-administered with chromium picolinate, sevelamer or ezetimibe, with serum thyroxine measured over 6 hours: chromium picolinate and sevelamer each significantly (p&lt;0.05) decreased the area under the serum thyroxine concentration curve, while ezetimibe had no effect; the authors advise that patients taking chromium picolinate separate it from their thyroid hormone preparation by several hours.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/35953126/" data-pmid="35953126" rel="nofollow noopener" target="_blank">Immunoassay design and biotin interference.</a>
-<div class="cwho">Dasgupta, 2022 · PMID 35953126 · negative</div>
+<div class="cwho"><span class="ctype">Narrative review</span>Dasgupta, 2022 · PMID 35953126 · negative</div>
 <p class="cfind">Review of biotin interference in immunoassays that use biotinylated antibodies: elevated serum biotin falsely raises analyte concentration in competitive-format assays and falsely lowers it in sandwich-format assays, which can produce diagnostic error including falsely lower troponin and a false picture of hyperthyroidism (positive interference in free T3 and free T4, negative interference in TSH); relevant because chromium is widely sold combined with biotin.</p></li></ol></div></details>
 </div>
 

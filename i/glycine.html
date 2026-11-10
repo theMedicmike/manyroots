@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/insomnia">For insomnia</a></h4>
+
 <p style="margin:8px 0 12px">Glycine is a simple amino acid found in protein-rich foods, and a few small Japanese studies suggest 3 grams before bed may help people feel they slept better and feel less tired the next day. The catch is that these studies are small, short, and mostly from researchers connected to a company that sells glycine, and no one has independently confirmed the results in people with diagnosed insomnia. It appears very gentle and safe at the studied dose, so it's a low-risk option with early-stage evidence.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>At the 3 g bedtime dose used in sleep studies, glycine was well tolerated with no significant adverse events reported; it is a normal dietary amino acid. Mild gastrointestinal upset (soft stools, nausea) is occasionally reported at higher intakes. Formal long-term safety data at supplemental doses are limited; a 2024 review cautions that very high doses (&gt;500 mg/kg body mass) could be cytotoxic in theory, far above sleep-study doses.</p>
@@ -118,22 +133,24 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>Human data for glycine and sleep are preliminary. A review by the originating research group (Bannai &amp; Kawai 2012) reports that 3 g glycine before bedtime significantly improved subjective sleep quality in individuals with insomniac tendencies, and proposes a mechanism via reduced core body temperature with increased cutaneous blood flow. In a crossover study of healthy volunteers restricted to 25% less than usual sleep for three nights (Bannai 2012), 3 g glycine before bed significantly reduced visual-analog-scale fatigue and improved psychomotor vigilance performance, with only a non-significant trend toward reduced sleepiness. A blinded crossover deception trial of a multi-ingredient blend containing glycine (with tryptophan, magnesium, tart cherry, and L-theanine) reduced sleep-onset latency by 24 minutes (p=0.002) and increased total sleep time by 22 minutes (p=0.01) in 16 adults, but glycine's individual contribution cannot be isolated. Against this, a 7-night RCT of a glycine-rich collagen peptide (15 g/day) in 13 physically active males with sleep complaints found no influence on sleep quantity, latency, or efficiency, though polysomnographic awakenings were fewer (21.3 vs 29.3, p=0.028). No independent RCTs in adults with diagnosed insomnia are indexed on PubMed.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 3 g of glycine taken shortly before bedtime in the sleep trials; the collagen-peptide trial provided 15 g of glycine-rich collagen 1 hour before bed.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Human evidence comes from a small number of short trials, mostly from a single research group with manufacturer (Ajinomoto) affiliation. The pivotal trials in people with insomnia tendencies are summarized in a review rather than being independently replicated, the PubMed-indexed crossover study was in sleep-restricted healthy volunteers (not insomnia patients), and a glycine-rich collagen trial found no effect on sleep latency, quantity, or efficiency. No adequate independent RCTs in diagnosed insomnia exist, so the evidence is preliminary.</p></div></details>
+
+<div class="ebase"><span><b>4</b> sources</span><span><b>2</b> trial-level or better</span><span><b>2</b> mixed</span><span>2012–2024</span></div>
 <details open><summary>Sources (4)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/22293292/" data-pmid="22293292" rel="nofollow noopener" target="_blank">New therapeutic strategy for amino acid medicine: glycine improves the quality of sleep.</a>
-<div class="cwho">Bannai &amp; Kawai, 2012 · PMID 22293292 · positive</div>
+<div class="cwho"><span class="ctype">Narrative review</span>Bannai &amp; Kawai, 2012 · PMID 22293292 · positive</div>
 <p class="cfind">Review from the originating (Ajinomoto-affiliated) group reporting that glycine ingestion before bedtime significantly improved subjective sleep quality in individuals with insomniac tendencies, with rat data showing raised CSF glycine and reduced core body temperature as the proposed sleep-onset mechanism.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/22529837/" data-pmid="22529837" rel="nofollow noopener" target="_blank">The effects of glycine on subjective daytime performance in partially sleep-restricted healthy volunteers.</a>
-<div class="cwho">Bannai, Kawai, Ono, Nakahara &amp; Murakami, 2012 · PMID 22529837 · mixed</div>
+<div class="cwho"><span class="ctype">Journal article</span>Bannai, Kawai, Ono, Nakahara &amp; Murakami, 2012 · PMID 22529837 · mixed</div>
 <p class="cfind">In healthy volunteers whose sleep was restricted by 25% for three nights, 3 g glycine before bed significantly reduced VAS-rated fatigue and improved psychomotor vigilance test performance the next day, but sleepiness showed only a non-significant trend toward reduction; plasma melatonin was unchanged.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/36094342/" data-pmid="36094342" rel="nofollow noopener" target="_blank">Nutritional Modulation of Sleep Latency, Duration, and Efficiency: A Randomized, Repeated-Measures, Double-Blind Deception Study.</a>
-<div class="cwho">Langan-Evans et al., 2022 · PMID 36094342 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Langan-Evans et al., 2022 · PMID 36094342 · positive</div>
 <p class="cfind">A blend containing glycine plus tryptophan, magnesium, tart cherry, and L-theanine reduced sleep-onset latency by 24 min (p=0.002), increased total sleep time by 22 min (p=0.01), and improved sleep efficiency by 2.4% (p=0.03) in 16 adults — but as a multi-ingredient formula it cannot establish glycine's individual effect.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/37874350/" data-pmid="37874350" rel="nofollow noopener" target="_blank">Collagen peptide supplementation before bedtime reduces sleep fragmentation and improves cognitive function in physically active males with sleep complaints.</a>
-<div class="cwho">Thomas et al., 2023 · PMID 37874350 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Thomas et al., 2023 · PMID 37874350 · mixed</div>
 <p class="cfind">In a randomized crossover trial (n=13, 7 nights), 15 g/day of glycine-rich collagen peptides did not influence sleep quantity, latency, or efficiency versus placebo; polysomnographic awakenings were fewer (21.3 vs 29.3 counts, p=0.028) and morning Stroop accuracy slightly higher, with no differences in core temperature or subjective sleep quality.</p></li></ol></div></details>
 </div>
 

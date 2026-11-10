@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -93,7 +107,7 @@ footer.site a{color:var(--muted)}
   .flag.emergency{background:#f4f4f4;border:1px solid #999;color:#111}
 }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Reducing alcohol intake","description":"Moderate evidence for high blood pressure.","url":"https://www.manyroots.org/i/alcohol-reduction","isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"The effect of a reduction in alcohol consumption on blood pressure: a systematic review and meta-analysis","identifier":"PMID:29253389"},{"@type":"ScholarlyArticle","name":"Effects of alcohol reduction on blood pressure: a meta-analysis of randomized controlled trials","identifier":"PMID:11711507"},{"@type":"ScholarlyArticle","name":"Prevention and Treatment of Hypertension Study (PATHS): effects of an alcohol treatment program on blood pressure","identifier":"PMID:9625399"},{"@type":"ScholarlyArticle","name":"Effect of alcohol on blood pressure (Cochrane Database of Systematic Reviews)","identifier":"PMID:32609894"},{"@type":"ScholarlyArticle","name":"Lowering blood pressure: a systematic review of sustained effects of non-pharmacological interventions","identifier":"PMID:9923952"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Reducing alcohol intake","description":"Moderate evidence for high blood pressure.","url":"https://www.manyroots.org/i/alcohol-reduction","isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"The effect of a reduction in alcohol consumption on blood pressure: a systematic review and meta-analysis.","identifier":"PMID:29253389"},{"@type":"ScholarlyArticle","name":"Effects of alcohol reduction on blood pressure: a meta-analysis of randomized controlled trials.","identifier":"PMID:11711507"},{"@type":"ScholarlyArticle","name":"Prevention and Treatment of Hypertension Study (PATHS): effects of an alcohol treatment program on blood pressure.","identifier":"PMID:9625399"},{"@type":"ScholarlyArticle","name":"Effect of alcohol on blood pressure.","identifier":"PMID:32609894"},{"@type":"ScholarlyArticle","name":"Lowering blood pressure: a systematic review of sustained effects of non-pharmacological interventions.","identifier":"PMID:9923952"}]}</script>
 <script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>
 </head><body>
 <div class="wrap">
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/high-blood-pressure">For high blood pressure</a></h4>
+
 <p style="margin:8px 0 12px">If you drink heavily, cutting back meaningfully lowers blood pressure — around 5 points off the top number for people going from six or more drinks a day down to about half that. If you already drink lightly, the studies show cutting back further does not move your blood pressure, so this is a lever for heavy drinkers specifically. Anyone who is physically dependent on alcohol should never stop suddenly on their own — that can be dangerous and needs medical support.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>For most people, drinking less is safe and carries benefits well beyond blood pressure — sleep, liver, cancer risk and injury risk. The important exception is physical alcohol dependence: abrupt cessation without medical support can cause a withdrawal syndrome with dangerous surges in blood pressure and heart rate, seizures and delirium tremens. Anyone drinking heavily every day, or who has previously had withdrawal symptoms, should reduce intake under clinical supervision rather than stopping suddenly. Note also that the evidence base is heavily male: the largest meta-analysis included 2,464 men and only 401 women, and the Cochrane acute-dosing review states its findings are relevant mainly to healthy males.</p>
@@ -118,26 +133,30 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>The most informative meta-analysis (36 trials, 2,865 participants, 2,464 of them men) found a clear threshold effect: in people drinking two or fewer drinks per day, reducing alcohol produced no significant blood pressure reduction, whereas in people drinking six or more drinks per day who cut intake by roughly 50%, systolic BP fell 5.50 mmHg (95% CI -6.70 to -4.30) and diastolic 3.97 mmHg (-4.70 to -3.25). An earlier meta-analysis of 15 randomised trials (2,234 participants) found overall pooled reductions of 3.31 mmHg systolic and 2.04 mmHg diastolic, with a dose-response relationship between percentage alcohol reduction and blood pressure fall and larger effects at higher baseline blood pressure. Against this, the PATHS randomised trial in 641 outpatient veterans drinking three or more drinks daily achieved a sustained between-group difference of about 1.3 drinks per day yet produced only a non-significant 1.2/0.7 mmHg blood pressure difference at six months, and 0.9/0.7 mmHg in the hypertensive stratum; the investigators concluded the results do not provide strong support for alcohol reduction as a sole method in non-dependent moderate drinkers. A Cochrane review of acute dosing (32 RCTs, 767 participants, mostly healthy men) explains why single readings mislead: high-dose alcohol lowers systolic BP by about 3.5 mmHg within six hours but raises it by 3.7/2.4 mmHg and heart rate by 2.7 bpm at 13 hours or more after drinking. Across this literature the outcome measured was blood pressure, not heart attacks, strokes or death.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> Interventions reduced intake by roughly 50% or to two or fewer standard drinks per day (12 g pure alcohol per drink). PATHS achieved a between-group difference of about 1.3 drinks/day sustained over 15-24 months. The largest meta-analysed effects came from people drinking six or more drinks daily who halved their intake.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Multiple randomised-trial meta-analyses show a dose-dependent blood pressure reduction, but the effect exists only above a threshold — there is no significant benefit in people already drinking two or fewer drinks per day — and the largest dedicated randomised trial (PATHS, 641 participants) produced a non-significant 1.2/0.7 mmHg difference despite a sustained real reduction in drinking. Positive overall but modest, conditional and with a major null trial; graded moderate rather than strong.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/benzodiazepines">Benzodiazepines</a><a href="/i/prescription-sleep-medications">Prescription sleep medications</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>5</b> sources</span><span><b>5</b> trial-level or better</span><span><b>1</b> null or negative</span><span><b>3</b> mixed</span><span>1998–2020</span></div>
 <details open><summary>Sources (5)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/29253389/" data-pmid="29253389" rel="nofollow noopener" target="_blank">The effect of a reduction in alcohol consumption on blood pressure: a systematic review and meta-analysis</a>
-<div class="cwho">Roerecke M et al., 2017 · PMID 29253389 · mixed</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/29253389/" data-pmid="29253389" rel="nofollow noopener" target="_blank">The effect of a reduction in alcohol consumption on blood pressure: a systematic review and meta-analysis.</a>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Roerecke M et al., 2017 · PMID 29253389 · mixed</div>
 <p class="cfind">36 trials, 2,865 participants (2,464 men and 401 women). In people drinking two or fewer drinks per day, reducing alcohol was not associated with significant blood pressure reduction. In those drinking six or more drinks per day who reduced intake by about 50%, systolic BP fell 5.50 mmHg (95% CI -6.70 to -4.30) and diastolic 3.97 mmHg (-4.70 to -3.25), with an apparent threshold effect.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/11711507/" data-pmid="11711507" rel="nofollow noopener" target="_blank">Effects of alcohol reduction on blood pressure: a meta-analysis of randomized controlled trials</a>
-<div class="cwho">Xin X et al., 2001 · PMID 11711507 · positive</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/11711507/" data-pmid="11711507" rel="nofollow noopener" target="_blank">Effects of alcohol reduction on blood pressure: a meta-analysis of randomized controlled trials.</a>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Xin X et al., 2001 · PMID 11711507 · positive</div>
 <p class="cfind">15 randomised trials, 2,234 participants, alcohol reduction as the only intervention difference. Pooled reductions of 3.31 mmHg systolic (95% CI -2.52 to -4.10) and 2.04 mmHg diastolic (-1.49 to -2.58), with a dose-response relationship and larger effects at higher baseline blood pressure.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/9625399/" data-pmid="9625399" rel="nofollow noopener" target="_blank">Prevention and Treatment of Hypertension Study (PATHS): effects of an alcohol treatment program on blood pressure</a>
-<div class="cwho">Cushman WC et al., 1998 · PMID 9625399 · null</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/9625399/" data-pmid="9625399" rel="nofollow noopener" target="_blank">Prevention and Treatment of Hypertension Study (PATHS): effects of an alcohol treatment program on blood pressure.</a>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Cushman WC et al., 1998 · PMID 9625399 · null</div>
 <p class="cfind">641 veterans averaging three or more drinks daily with diastolic BP 80-99 mmHg, randomised to a cognitive-behavioural alcohol reduction programme or control for 15-24 months. Intake fell by 202 g/wk in the intervention group versus 78 g/wk in controls (P&lt;.001 at every assessment from 3 to 24 months), yet the intervention group had only a 1.2/0.7 mmHg greater blood pressure reduction at the 6-month primary endpoint (P=.17 and P=.18), and 0.9/0.7 mmHg in the hypertensive stratum (P=.58 and P=.44). Authors concluded the results do not provide strong support for alcohol reduction as a sole method in non-dependent moderate drinkers.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/32609894/" data-pmid="32609894" rel="nofollow noopener" target="_blank">Effect of alcohol on blood pressure (Cochrane Database of Systematic Reviews)</a>
-<div class="cwho">Tasnim S et al., 2020 · PMID 32609894 · mixed</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/32609894/" data-pmid="32609894" rel="nofollow noopener" target="_blank">Effect of alcohol on blood pressure.</a>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Tasnim S et al., 2020 · PMID 32609894 · mixed</div>
 <p class="cfind">32 RCTs, 767 participants, predominantly healthy men (n=642). High-dose alcohol (&gt;30 g) had a biphasic effect: systolic BP fell 3.5 mmHg (95% CI -6.0 to -1.0) within six hours but rose 3.7 mmHg systolic (2.3 to 5.1) and 2.4 mmHg diastolic (0.2 to 4.5) at 13 hours or more, with heart rate increased at all times up to 24 hours. Findings are relevant mainly to healthy males.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/9923952/" data-pmid="9923952" rel="nofollow noopener" target="_blank">Lowering blood pressure: a systematic review of sustained effects of non-pharmacological interventions</a>
-<div class="cwho">Ebrahim S &amp; Davey Smith G, 1998 · PMID 9923952 · mixed</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/9923952/" data-pmid="9923952" rel="nofollow noopener" target="_blank">Lowering blood pressure: a systematic review of sustained effects of non-pharmacological interventions.</a>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Ebrahim S &amp; Davey Smith G, 1998 · PMID 9923952 · mixed</div>
 <p class="cfind">Only one randomised trial of alcohol reduction lasting six months or longer was identified; it produced a net systolic BP change of -2.1 mmHg (95% CI -4.1 to -0.1) in normotensive participants. Authors judged the majority of included trials to be of low methodological quality and concluded that net changes are probably overestimates of achievable effect.</p></li></ol></div></details>
 </div>
 

@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/insomnia">For insomnia</a></h4>
+
 <p style="margin:8px 0 12px">Tart cherry juice naturally contains a little melatonin, the hormone that helps set your sleep clock, and a few small studies found that people slept somewhat longer or woke less often after drinking it for one to two weeks. But other equally careful studies found no benefit at all, so the honest answer is that it might help a little and might do nothing. It is a food, not a sleep drug — if you try it, the main trade-off is the sugar that comes with two glasses of juice a day.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Well tolerated in trials up to 30 days, with no serious adverse events reported in the studies retrieved. Large amounts of juice can cause mild digestive upset (it is a fruit juice rich in sorbitol and polyphenols). It is a common food with a long history of ordinary dietary use.</p>
@@ -118,30 +133,34 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>According to trials retrieved from PubMed in this review, evidence for tart cherry in sleep comes from small randomized crossover pilots with conflicting results. Pigeon et al. (2010) in 15 older adults with chronic insomnia found that 2 weeks of a tart cherry juice blend beat placebo only on minutes awake after sleep onset and insomnia severity, with effect sizes described as moderate to negligible and considerably smaller than hypnotics or CBT-I. Howatson et al. (2012) in 20 healthy adults found 7 days of concentrate raised urinary 6-sulfatoxymelatonin and significantly increased time in bed, total sleep time, and sleep efficiency (P&lt;0.05); Losso et al. (2018) in 8 completers over age 50 with insomnia found polysomnographic sleep time increased by 84 minutes (P=0.0182) on 240 mL twice daily. Against these, Hillman et al. (2022) found no difference in sleep time or quality in 44 adults after 30 days of juice or capsules, and Tucker et al. (2024) found a 500 mg Montmorency tart cherry powder capsule for 14 days produced no significant effect on any objective or subjective sleep or inflammation outcome in 34 adults with sleep issues and overweight/obesity (p&gt;0.05 for all). A 2025 systematic review (Barforoush et al.) of 7 interventional studies concluded the evidence is limited and heterogeneous, with only 3 studies showing significant sleep improvements.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> Most positive trials used 240 mL (8 oz) tart cherry juice twice daily (morning and evening) or 30 mL Montmorency concentrate twice daily for 7-14 days; a null 30-day trial used 2x240 mL/day juice or powdered capsules, and a null 14-day trial used a single 500 mg powder capsule 1 hour before bed.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Randomized crossover trials exist but all are small pilots (n=8-44), and results are split: three small crossover RCTs reported better sleep on some measures (Pigeon 2010, Howatson 2012, Losso 2018), while two more recent controlled studies found no effect on any sleep outcome (Hillman 2022 juice/capsules x30 days; Tucker 2024 powder capsules x14 days). A 2025 systematic review of 7 interventional studies judged the evidence limited and heterogeneous, with only 3 of 7 studies showing significant sleep improvements. Small, few, and conflicting trials place this at 'early' rather than 'moderate'; graded conservatively per the lower-of-two rule.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/melatonin">Melatonin</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>6</b> sources</span><span><b>5</b> trial-level or better</span><span><b>2</b> null or negative</span><span><b>2</b> mixed</span><span>2010–2026</span></div>
 <details open><summary>Sources (6)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/20438325/" data-pmid="20438325" rel="nofollow noopener" target="_blank">Effects of a tart cherry juice beverage on the sleep of older adults with insomnia: a pilot study.</a>
-<div class="cwho">Pigeon WR et al., 2010 · PMID 20438325 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Pigeon WR et al., 2010 · PMID 20438325 · mixed</div>
 <p class="cfind">Randomized double-blind crossover in 15 older adults with chronic insomnia; 2 weeks of tart cherry juice blend significantly reduced minutes awake after sleep onset and insomnia severity vs placebo, but showed no advantage over placebo for sleep latency, total sleep time, or sleep efficiency; effect sizes moderate to negligible and considerably less than hypnotics or CBT-I.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/22038497/" data-pmid="22038497" rel="nofollow noopener" target="_blank">Effect of tart cherry juice (Prunus cerasus) on melatonin levels and enhanced sleep quality.</a>
-<div class="cwho">Howatson G et al., 2012 · PMID 22038497 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Howatson G et al., 2012 · PMID 22038497 · positive</div>
 <p class="cfind">Randomized double-blind placebo-controlled crossover in 20 healthy adults; 7 days of tart cherry juice concentrate significantly elevated total urinary 6-sulfatoxymelatonin (P&lt;0.05) and significantly increased actigraphic time in bed, total sleep time, and sleep efficiency (P&lt;0.05) vs placebo.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/28901958/" data-pmid="28901958" rel="nofollow noopener" target="_blank">Pilot Study of the Tart Cherry Juice for the Treatment of Insomnia and Investigation of Mechanisms.</a>
-<div class="cwho">Losso JN et al., 2018 · PMID 28901958 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Losso JN et al., 2018 · PMID 28901958 · positive</div>
 <p class="cfind">Placebo-controlled crossover in adults &gt;50 with insomnia (8 completers); 240 mL twice daily for 2 weeks increased polysomnographic sleep time by 84 minutes (P=0.0182) and improved Pittsburgh Sleep Quality Index sleep efficiency (P=0.03); other sleep questionnaires showed no significant differences; serum kynurenine-to-tryptophan ratio and prostaglandin E2 decreased (P&lt;0.05).</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/35790450/" data-pmid="35790450" rel="nofollow noopener" target="_blank">Montmorency tart cherry supplementation does not impact sleep, body composition, cellular health, or blood pressure in healthy adults.</a>
-<div class="cwho">Hillman AR et al., 2022 · PMID 35790450 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Hillman AR et al., 2022 · PMID 35790450 · null</div>
 <p class="cfind">In 44 adults consuming 2x240 mL/day Montmorency tart cherry juice, powdered capsules, or matched placebos for 30 days, there were no significant differences between groups in sleep time or sleep quality (both improved over time in all groups); the authors note the results conflict with earlier positive data.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/39683518/" data-pmid="39683518" rel="nofollow noopener" target="_blank">Commonly Used Dose of Montmorency Tart Cherry Powder Does Not Improve Sleep or Inflammation Outcomes in Individuals with Overweight or Obesity.</a>
-<div class="cwho">Tucker RM et al., 2024 · PMID 39683518 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Tucker RM et al., 2024 · PMID 39683518 · null</div>
 <p class="cfind">Randomized controlled crossover in 34 adults with sleep issues and overweight/obesity; 500 mg Montmorency tart cherry capsules 1 hour before bed for 14 days produced no significant effect on any outcome (p&gt;0.05 for all), including total sleep time, deep and REM sleep, PSQI, Insomnia Severity Index, and inflammatory markers (CRP, TNF-alpha, interleukins).</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/40964149/" data-pmid="40964149" rel="nofollow noopener" target="_blank">The Effect of Tart Cherry on Sleep Quality and Sleep Disorders: A Systematic Review.</a>
-<div class="cwho">Barforoush F et al., 2025 · PMID 40964149 · mixed</div>
+<div class="cwho"><span class="ctype">Narrative review</span>Barforoush F et al., 2025 · PMID 40964149 · mixed</div>
 <p class="cfind">Systematic review of 7 interventional studies: 3 reported significant improvements in sleep duration, efficiency, or onset; 3 reported increased melatonin levels; large differences in dose, duration, and populations led the authors to conclude the available evidence is still limited and heterogeneous.</p></li></ol></div></details>
 </div>
 

@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -93,7 +107,7 @@ footer.site a{color:var(--muted)}
   .flag.emergency{background:#f4f4f4;border:1px solid #999;color:#111}
 }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Iron (with ferritin testing first)","description":"Strong evidence for fatigue & low energy.","url":"https://www.manyroots.org/i/iron","isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"Efficacy of iron supplementation on fatigue and physical capacity in non-anaemic iron-deficient adults: a systematic review of randomised controlled trials","identifier":"PMID:29626044"},{"@type":"ScholarlyArticle","name":"Iron supplementation for unexplained fatigue in non-anaemic women: double blind randomised placebo controlled trial","identifier":"PMID:12763985"},{"@type":"ScholarlyArticle","name":"Effect of iron supplementation on fatigue in nonanemic menstruating women with low ferritin: a randomized controlled trial","identifier":"PMID:22777991"},{"@type":"ScholarlyArticle","name":"Psychiatric and cognitive outcomes of iron supplementation in non-anemic children, adolescents, and menstruating adults: A meta-analysis and systematic review","identifier":"PMID:40945632"},{"@type":"ScholarlyArticle","name":"Clinical evaluation of iron treatment efficiency among non-anemic but iron-deficient female blood donors: a randomized controlled trial","identifier":"PMID:22272750"},{"@type":"ScholarlyArticle","name":"Serum or plasma ferritin concentration as an index of iron deficiency and overload","identifier":"PMID:34028001"},{"@type":"ScholarlyArticle","name":"Ferrous sulfate supplementation causes significant gastrointestinal side-effects in adults: a systematic review and meta-analysis","identifier":"PMID:25700159"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Iron","description":"Strong evidence for fatigue & low energy.","url":"https://www.manyroots.org/i/iron","isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"Efficacy of iron supplementation on fatigue and physical capacity in non-anaemic iron-deficient adults: a systematic review of randomised controlled trials.","identifier":"PMID:29626044"},{"@type":"ScholarlyArticle","name":"Iron supplementation for unexplained fatigue in non-anaemic women: double blind randomised placebo controlled trial.","identifier":"PMID:12763985"},{"@type":"ScholarlyArticle","name":"Effect of iron supplementation on fatigue in nonanemic menstruating women with low ferritin: a randomized controlled trial.","identifier":"PMID:22777991"},{"@type":"ScholarlyArticle","name":"Psychiatric and cognitive outcomes of iron supplementation in non-anemic children, adolescents, and menstruating adults: A meta-analysis and systematic review.","identifier":"PMID:40945632"},{"@type":"ScholarlyArticle","name":"Clinical evaluation of iron treatment efficiency among non-anemic but iron-deficient female blood donors: a randomized controlled trial.","identifier":"PMID:22272750"},{"@type":"ScholarlyArticle","name":"Serum or plasma ferritin concentration as an index of iron deficiency and overload.","identifier":"PMID:34028001"},{"@type":"ScholarlyArticle","name":"Ferrous sulfate supplementation causes significant gastrointestinal side-effects in adults: a systematic review and meta-analysis.","identifier":"PMID:25700159"}]}</script>
 <script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>
 </head><body>
 <div class="wrap">
@@ -102,14 +116,15 @@ footer.site a{color:var(--muted)}
   <nav><a href="/">All conditions</a><a href="/map">The map</a><a href="/how-we-grade">How we grade</a></nav>
 </header>
 
-<p class="crumb"><a href="/">All conditions</a> › Iron (with ferritin testing first)</p>
+<p class="crumb"><a href="/">All conditions</a> › Iron</p>
 <span class="tchip"><span class="dot" style="background:#5D95DC"></span>Minerals &amp; nutrients</span>
-<h1>Iron (with ferritin testing first)</h1>
+<h1>Iron</h1>
 <span class="chip" style="color:var(--strong)"><svg class="th" width="42" height="10" role="img" aria-label="Strong evidence"><line x1="2" y1="5" x2="40" y2="5" stroke="#D8C9A3" stroke-width="3" stroke-linecap="round" opacity=".9"/></svg> Strong evidence · for fatigue &amp; low energy</span>
 
 
 <div class="card">
 <h4><a href="/c/fatigue">For fatigue &amp; low energy</a></h4>
+<div class="caution" style="padding:0;margin:8px 0 0"><b>Important</b><span>Get ferritin tested before supplementing - and keep iron tablets away from children, where overdose is a leading cause of poisoning death.</span></div>
 <p style="margin:8px 0 12px">If your tiredness is coming from low iron, replacing it can make a real difference - but only if you actually are low. In the trials, women with low ferritin who took iron reported less tiredness than women taking a dummy pill, while the same treatment did nothing measurable for their stamina or fitness, and pooled analysis found the benefit vanished in people who were not iron-deficient to begin with. That is why a ferritin blood test comes before the supplement: iron you don't need won't lift your energy, often upsets the stomach, and in some people builds up to harmful levels.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Oral ferrous sulfate roughly doubles the odds of gastrointestinal side effects compared with placebo (OR 2.32, 95% CI 1.74-3.08) - nausea, constipation, abdominal pain, dark stools - and the pooled analysis found no relationship between those odds and the dose taken, so lowering the dose is not a reliable fix. Iron tablets are a leading cause of fatal poisoning in young children and must be stored out of reach. Taking iron without a documented deficiency has no demonstrated benefit for fatigue and, in people with an iron-loading condition, allows iron to accumulate in liver, heart and pancreas.</p>
@@ -118,34 +133,36 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>A 2018 systematic review of 18 randomised trials (1,170 participants) in iron-deficient non-anaemic adults found iron supplementation reduced self-reported fatigue (SMD -0.38, 95% CI -0.52 to -0.23, I-squared 0%, 4 trials, 714 participants) but did not improve objective physical capacity, including maximal oxygen consumption (SMD 0.11, 95% CI -0.15 to 0.37, 9 trials, 235 participants). In the anchoring trial of 144 non-anaemic women with unexplained fatigue, fatigue fell 29% on 80 mg/day oral ferrous sulfate versus 13% on placebo over four weeks (difference 0.95 points on a 10-point scale, 95% CI 0.32 to 1.62, P=0.004), with benefit restricted on subgroup analysis to women with ferritin at or below 50 ug/L. A 12-week trial in 198 menstruating women recruited on ferritin under 50 ug/L and haemoglobin above 12.0 g/dL replicated the fatigue finding (-47.7% versus -28.8%, difference -18.9%, 95% CI -34.5 to -3.2, P=0.02) but showed no effect on quality of life (P=0.2), depression (P=0.97) or anxiety (P=0.5). A separate 2025 meta-analysis of 18 studies (1,408 participants) independently found improved fatigue in the randomised trials (d=0.34) but no benefit for attention or depression, and reported that supplementation effects were absent once participants who were not iron-deficient were excluded. Against all of this, 154 iron-deficient non-anaemic female blood donors given four weeks of ferrous sulfate showed no fatigue benefit (change -0.15 points, 95% CI -0.9 to 0.6, P=0.697) despite haemoglobin rising 5.2 g/L and ferritin 14.8 ng/mL. Ferritin is the gate that decides who is in the responding group: a Cochrane diagnostic accuracy review found that at a 30 ug/L threshold among adults presenting for medical care, ferritin was 79% sensitive (95% CI 58-91%) and 98% specific (95% CI 91-100%) for iron deficiency on low-certainty evidence, with insufficient evidence to judge its performance when screening people without symptoms.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 80 mg/day elemental iron as oral ferrous sulfate for 4-12 weeks in the two anchoring trials in non-anaemic women. The 12-week trial recruited on serum ferritin below 50 ug/L with haemoglobin above 12.0 g/dL; the 4-week trial recruited fatigued women with no ferritin entry criterion, and the restriction to ferritin at or below 50 ug/L came from a subgroup analysis, not from how participants were selected.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Two independent meta-analyses and multiple placebo-controlled RCTs show a consistent reduction in self-reported fatigue when iron deficiency is documented, and iron replacement is guideline first-line care for iron-deficiency anaemia. The grade applies only to people with confirmed low iron. Three honest limits keep it from being unqualified: the same meta-analysis found no improvement in objective physical capacity, a well-conducted trial in iron-deficient blood donors found no fatigue benefit at all, and a 2025 meta-analysis found the benefit disappeared once participants who were not iron-deficient were excluded from the analysis.</p></div></details>
+
+<div class="ebase"><span><b>7</b> sources</span><span><b>7</b> trial-level or better</span><span><b>2</b> null or negative</span><span><b>3</b> mixed</span><span>2003–2025</span></div>
 <details open><summary>Sources (7)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/29626044/" data-pmid="29626044" rel="nofollow noopener" target="_blank">Efficacy of iron supplementation on fatigue and physical capacity in non-anaemic iron-deficient adults: a systematic review of randomised controlled trials</a>
-<div class="cwho">Houston BL, et al., 2018 · PMID 29626044 · mixed</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/29626044/" data-pmid="29626044" rel="nofollow noopener" target="_blank">Efficacy of iron supplementation on fatigue and physical capacity in non-anaemic iron-deficient adults: a systematic review of randomised controlled trials.</a>
+<div class="cwho"><span class="ctype top">Systematic review</span>Houston BL, et al., 2018 · PMID 29626044 · mixed</div>
 <p class="cfind">18 RCTs, 1,170 participants: iron reduced self-reported fatigue (SMD -0.38, 95% CI -0.52 to -0.23, I-squared 0%, 4 trials, 714 participants) but did not improve maximal oxygen consumption (SMD 0.11, 95% CI -0.15 to 0.37, 9 trials, 235 participants) or timed exercise testing. Subjective benefit without objective benefit.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/12763985/" data-pmid="12763985" rel="nofollow noopener" target="_blank">Iron supplementation for unexplained fatigue in non-anaemic women: double blind randomised placebo controlled trial</a>
-<div class="cwho">Verdon F, et al., 2003 · PMID 12763985 · positive</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/12763985/" data-pmid="12763985" rel="nofollow noopener" target="_blank">Iron supplementation for unexplained fatigue in non-anaemic women: double blind randomised placebo controlled trial.</a>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Verdon F, et al., 2003 · PMID 12763985 · positive</div>
 <p class="cfind">144 women aged 18-55 with unexplained fatigue and no ferritin entry criterion; 80 mg/day elemental iron for 4 weeks reduced fatigue 29% versus 13% on placebo (difference 0.95 points on a 10-point scale, 95% CI 0.32 to 1.62, P=0.004). Subgroup analysis showed improvement only in women with ferritin at or below 50 ug/L.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/22777991/" data-pmid="22777991" rel="nofollow noopener" target="_blank">Effect of iron supplementation on fatigue in nonanemic menstruating women with low ferritin: a randomized controlled trial</a>
-<div class="cwho">Vaucher P, et al., 2012 · PMID 22777991 · positive</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/22777991/" data-pmid="22777991" rel="nofollow noopener" target="_blank">Effect of iron supplementation on fatigue in nonanemic menstruating women with low ferritin: a randomized controlled trial.</a>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Vaucher P, et al., 2012 · PMID 22777991 · positive</div>
 <p class="cfind">198 women recruited on ferritin under 50 ug/L and haemoglobin above 12.0 g/dL; 12 weeks of 80 mg/day iron reduced fatigue 47.7% versus 28.8% on placebo (difference -18.9%, 95% CI -34.5 to -3.2, P=0.02), with no significant effect on quality of life (P=0.2), depression (P=0.97) or anxiety (P=0.5).</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/40945632/" data-pmid="40945632" rel="nofollow noopener" target="_blank">Psychiatric and cognitive outcomes of iron supplementation in non-anemic children, adolescents, and menstruating adults: A meta-analysis and systematic review</a>
-<div class="cwho">Fiani D, et al., 2025 · PMID 40945632 · mixed</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/40945632/" data-pmid="40945632" rel="nofollow noopener" target="_blank">Psychiatric and cognitive outcomes of iron supplementation in non-anemic children, adolescents, and menstruating adults: A meta-analysis and systematic review.</a>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Fiani D, et al., 2025 · PMID 40945632 · mixed</div>
 <p class="cfind">18 studies (12 RCTs, 6 pre-post), 1,408 participants. In the RCTs iron improved fatigue (d=0.34), anxiety (d=0.34) and physical well-being (d=0.42) but not attention or depression. Critically, supplementation effects were absent when iron-deficient participants were excluded - independent confirmation that the benefit belongs to the deficient, not to everyone.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/22272750/" data-pmid="22272750" rel="nofollow noopener" target="_blank">Clinical evaluation of iron treatment efficiency among non-anemic but iron-deficient female blood donors: a randomized controlled trial</a>
-<div class="cwho">Waldvogel S, et al., 2012 · PMID 22272750 · null</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/22272750/" data-pmid="22272750" rel="nofollow noopener" target="_blank">Clinical evaluation of iron treatment efficiency among non-anemic but iron-deficient female blood donors: a randomized controlled trial.</a>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Waldvogel S, et al., 2012 · PMID 22272750 · null</div>
 <p class="cfind">154 iron-deficient non-anaemic female blood donors under 50; four weeks of ferrous sulfate raised haemoglobin 5.2 g/L and ferritin 14.8 ng/mL but produced no change in fatigue (-0.15 points, 95% CI -0.9 to 0.6, P=0.697) or any secondary outcome. Authors concluded these donors would not clinically benefit.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/34028001/" data-pmid="34028001" rel="nofollow noopener" target="_blank">Serum or plasma ferritin concentration as an index of iron deficiency and overload</a>
-<div class="cwho">Garcia-Casal MN, et al., 2021 (Cochrane) · PMID 34028001 · mixed</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/34028001/" data-pmid="34028001" rel="nofollow noopener" target="_blank">Serum or plasma ferritin concentration as an index of iron deficiency and overload.</a>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Garcia-Casal MN, et al., 2021 (Cochrane) · PMID 34028001 · mixed</div>
 <p class="cfind">108 studies. At a 30 ug/L threshold in adults presenting for medical care (9 studies, 512 participants), ferritin was 79% sensitive (95% CI 58-91%) and 98% specific (95% CI 91-100%) for iron deficiency, low-certainty evidence. Insufficient evidence for screening people without symptoms; ferritin rises with inflammation and infection.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/25700159/" data-pmid="25700159" rel="nofollow noopener" target="_blank">Ferrous sulfate supplementation causes significant gastrointestinal side-effects in adults: a systematic review and meta-analysis</a>
-<div class="cwho">Tolkien Z, et al., 2015 · PMID 25700159 · negative</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/25700159/" data-pmid="25700159" rel="nofollow noopener" target="_blank">Ferrous sulfate supplementation causes significant gastrointestinal side-effects in adults: a systematic review and meta-analysis.</a>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Tolkien Z, et al., 2015 · PMID 25700159 · negative</div>
 <p class="cfind">43 trials, 6,831 adults: ferrous sulfate raised the odds of gastrointestinal side effects versus placebo (OR 2.32, 95% CI 1.74-3.08, P&lt;0.0001) and versus intravenous iron (OR 3.05, 95% CI 2.07-4.48). Meta-regression found no association between the odds ratio and iron dose.</p></li></ol></div></details>
 </div>
 

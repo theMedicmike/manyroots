@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/high-blood-pressure">For high blood pressure</a></h4>
+
 <p style="margin:8px 0 12px">The DASH eating pattern - lots of fruit and vegetables, low-fat dairy, whole grains and nuts, with less salty, fatty and sugary food - is one of the few diet changes with a genuine track record for lowering blood pressure. In tightly controlled studies where researchers provided all the food, it lowered the top number by about 5 points on average, and by around 11 points in people who already had high blood pressure. When people shop and cook for themselves the effect is roughly half that and harder to keep up, a recent trial suggests much of the benefit comes from the lower salt that travels with the pattern, and the handful of trials that counted heart attacks and strokes were far too small to tell whether DASH prevents them.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>A whole-food eating pattern with a good tolerability record; the randomized feeding trials reported no serious harms and DASH4D reported infrequent adverse events on every diet. Because it deliberately supplies large amounts of potassium, phosphorus and protein from fruit, vegetables, dairy, nuts and legumes, it needs medical supervision in advanced kidney disease - notably, the DASH4D variant tested in type 2 diabetes was deliberately reformulated to contain less potassium than the original. Several trials combined DASH with energy restriction and weight loss, so part of the measured blood pressure benefit in those studies may come from losing weight rather than from the food pattern itself. Long-term safety data are absent: the 2025 Cochrane review found no trials long enough to assess chronic adverse effects. Practical adherence is the main real-world limitation: benefits shrink substantially when people are not fed by a research kitchen.</p>
@@ -118,38 +133,42 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>In the original DASH controlled feeding trial (n=459, mean baseline 131.3/84.7 mmHg), the combination diet lowered systolic BP 5.5 mmHg and diastolic 3.0 mmHg more than control over 8 weeks, with a difference of 11.4/5.5 mmHg in the 133 participants who had hypertension versus 3.5/2.1 mmHg in the 326 who did not. DASH-Sodium (n=412) showed that the pattern and sodium reduction are additive: DASH at low sodium ran 7.1 mmHg (no hypertension) and 11.5 mmHg (hypertension) lower in systolic pressure than the control diet at high sodium. Pooled estimates are consistent - 17 RCTs (20 comparisons, 2,561 participants) gave -6.74 mmHg systolic (95% CI -8.25 to -5.23) and -3.54 diastolic, and a GRADE umbrella review of 31 controlled trials (n=4,414) gave -5.2 mmHg systolic (95% CI -7.0 to -3.4, moderate certainty) alongside a 20% lower cardiovascular incidence across 15 cohorts (RR 0.80, 95% CI 0.76-0.85, low certainty). The effect shrinks outside a research kitchen: 10 trials of 'modified' DASH gave only -3.26 mmHg systolic (95% CI -5.58 to -0.94), and in the PREMIER behavioural trial the absolute 18-month blood pressure differences versus advice-only were not statistically significant, though the odds of being hypertensive remained lower (OR 0.77, 95% CI 0.62-0.97). How much belongs to the food pattern itself is unsettled: in the 2025 DASH4D crossover feeding trial in 102 adults with type 2 diabetes, DASH4D with lower sodium lowered end-of-period systolic BP by 4.6 mmHg (95% CI, 7.2-2.0) versus a typical US diet with higher sodium, but the investigators reported that the effect of sodium reduction appeared stronger than the effect of the diet pattern. Hard-outcome evidence is effectively absent: a 2025 Cochrane review found only five randomized trials (1,397 participants, 16 weeks to 12 months) reporting cardiovascular events, with too few events for any conclusion about myocardial infarction, stroke or death, certainty rated low to very low, and no trials in people with existing cardiovascular disease - the 20% lower cardiovascular incidence comes from observational cohorts, not trials.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> A whole dietary pattern, not a dose: rich in fruits, vegetables and low-fat dairy products, with reduced saturated and total fat, plus whole grains, nuts and legumes and limited red/processed meat, sweets and sugar-sweetened drinks. Randomized trials ran from 5-week and 8-week fully provided-food periods (weight and sodium held constant) to 18 months of behavioural counselling in free-living adults. The largest effects were seen when DASH was combined with sodium intake below about 100 mmol/day, and the 2025 DASH4D trial used a variant modified for type 2 diabetes (lower carbohydrate, higher unsaturated fat, lower potassium than the original).</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Multiple randomized controlled feeding trials and several independent meta-analyses show consistent systolic reductions of roughly 3-7 mmHg (11.4 mmHg in the subgroup with established hypertension in the original trial), and the pattern is a first-line non-drug recommendation in international heart and diabetes association guidelines, as noted in the GRADE umbrella review. Held at 'strong' for blood pressure only, with three limitations a reader should weigh: the effect roughly halves when people shop and cook for themselves instead of being fed by a research kitchen; a 2025 Cochrane review found the randomized evidence for heart attacks, strokes and death inconclusive at low to very low certainty, with no secondary-prevention trials at all; and the 2025 DASH4D feeding trial reported that the sodium reduction usually bundled with DASH did more of the work than the food pattern itself.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/potassium">Potassium</a><a href="/i/ace-inhibitors-arbs">ACE inhibitors and ARBs</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>8</b> sources</span><span><b>8</b> trial-level or better</span><span><b>1</b> null or negative</span><span><b>3</b> mixed</span><span>1997–2025</span></div>
 <details open><summary>Sources (8)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/9099655/" data-pmid="9099655" rel="nofollow noopener" target="_blank">A clinical trial of the effects of dietary patterns on blood pressure. DASH Collaborative Research Group.</a>
-<div class="cwho">Appel LJ, Moore TJ, Obarzanek E, et al., 1997 · PMID 9099655 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Appel LJ, Moore TJ, Obarzanek E, et al., 1997 · PMID 9099655 · positive</div>
 <p class="cfind">In 459 adults over 8 weeks, the DASH combination diet lowered systolic BP 5.5 mmHg and diastolic 3.0 mmHg more than control (P&lt;0.001); in the 133 with hypertension the difference was 11.4/5.5 mmHg, versus 3.5/2.1 mmHg in the 326 without hypertension.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/11136953/" data-pmid="11136953" rel="nofollow noopener" target="_blank">Effects on blood pressure of reduced dietary sodium and the Dietary Approaches to Stop Hypertension (DASH) diet. DASH-Sodium Collaborative Research Group.</a>
-<div class="cwho">Sacks FM, Svetkey LP, Vollmer WM, et al., 2001 · PMID 11136953 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Sacks FM, Svetkey LP, Vollmer WM, et al., 2001 · PMID 11136953 · positive</div>
 <p class="cfind">In 412 randomized participants, DASH at low sodium produced mean systolic BP 7.1 mmHg lower in those without hypertension and 11.5 mmHg lower in those with hypertension compared with the control diet at high sodium; DASH was associated with significantly lower systolic BP at every sodium level.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25149893/" data-pmid="25149893" rel="nofollow noopener" target="_blank">Influence of Dietary Approaches to Stop Hypertension (DASH) diet on blood pressure: a systematic review and meta-analysis on randomized controlled trials.</a>
-<div class="cwho">Saneei P, Salehi-Abargouei A, Esmaillzadeh A, Azadbakht L, 2014 · PMID 25149893 · positive</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Saneei P, Salehi-Abargouei A, Esmaillzadeh A, Azadbakht L, 2014 · PMID 25149893 · positive</div>
 <p class="cfind">Pooling 17 RCTs (20 comparisons, 2,561 participants), DASH reduced systolic BP by 6.74 mmHg (95% CI -8.25 to -5.23, I2=78.1%) and diastolic by 3.54 mmHg (95% CI -4.29 to -2.79); reductions were larger in trials with energy restriction and in hypertensive participants.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/30764511/" data-pmid="30764511" rel="nofollow noopener" target="_blank">DASH Dietary Pattern and Cardiometabolic Outcomes: An Umbrella Review of Systematic Reviews and Meta-Analyses.</a>
-<div class="cwho">Chiavaroli L, Viguiliouk E, Nishi SK, et al., 2019 · PMID 30764511 · positive</div>
+<div class="cwho"><span class="ctype top">Systematic review</span>Chiavaroli L, Viguiliouk E, Nishi SK, et al., 2019 · PMID 30764511 · positive</div>
 <p class="cfind">Across 31 controlled trials (n=4,414) DASH lowered systolic BP 5.2 mmHg (95% CI -7.0 to -3.4) and diastolic 2.60 mmHg, graded moderate certainty; across 15 cohorts (n=942,140) DASH adherence was associated with lower incident cardiovascular disease (RR 0.80, 95% CI 0.76-0.85), graded low certainty.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/34557511/" data-pmid="34557511" rel="nofollow noopener" target="_blank">Effects of the Modified DASH Diet on Adults With Elevated Blood Pressure or Hypertension: A Systematic Review and Meta-Analysis.</a>
-<div class="cwho">Guo R, Li N, Yang R, et al., 2021 · PMID 34557511 · mixed</div>
+<div class="cwho"><span class="ctype top">Systematic review</span>Guo R, Li N, Yang R, et al., 2021 · PMID 34557511 · mixed</div>
 <p class="cfind">Across 10 RCTs of modified DASH diets, systolic BP fell only 3.26 mmHg (95% CI -5.58 to -0.94, P=0.006) and diastolic 2.07 mmHg (95% CI -3.68 to -0.46) versus control - roughly half the effect seen in the fully provided-food trials, with larger reductions when baseline BP was 140/90 mmHg or above.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/16585662/" data-pmid="16585662" rel="nofollow noopener" target="_blank">Effects of comprehensive lifestyle modification on diet, weight, physical fitness, and blood pressure control: 18-month results of a randomized trial.</a>
-<div class="cwho">Elmer PJ, Obarzanek E, Vollmer WM, et al., 2006 · PMID 16585662 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Elmer PJ, Obarzanek E, Vollmer WM, et al., 2006 · PMID 16585662 · mixed</div>
 <p class="cfind">In 810 free-living adults with prehypertension or stage 1 hypertension, adding DASH to an established lifestyle programme left absolute blood pressure reductions at 18 months that were greater than advice-only but not statistically significant; the odds ratio for hypertension was 0.77 (95% CI 0.62-0.97).</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/40489102/" data-pmid="40489102" rel="nofollow noopener" target="_blank">Dietary Patterns, Sodium Reduction, and Blood Pressure in Type 2 Diabetes: The DASH4D Randomized Clinical Trial.</a>
-<div class="cwho">Pilla SJ, Yeh HC, Mitchell CM, et al., 2025 · PMID 40489102 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Pilla SJ, Yeh HC, Mitchell CM, et al., 2025 · PMID 40489102 · mixed</div>
 <p class="cfind">In 102 adults with type 2 diabetes and systolic BP 120-159 mmHg (66% on two or more antihypertensives), the DASH4D diet with lower sodium reduced end-of-period systolic BP by 4.6 mmHg (95% CI, 7.2-2.0; P&lt;.001) and diastolic by 2.3 mmHg versus a typical US diet with higher sodium; most of the reduction occurred in the first 3 weeks of each 5-week period, and the effect of sodium reduction appeared stronger than the effect of the DASH4D diet itself.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/40326569/" data-pmid="40326569" rel="nofollow noopener" target="_blank">Dietary Approaches to Stop Hypertension (DASH) for the primary and secondary prevention of cardiovascular diseases.</a>
-<div class="cwho">Bensaaud A, Seery S, Gibson I, et al., 2025 (Cochrane) · PMID 40326569 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Bensaaud A, Seery S, Gibson I, et al., 2025 (Cochrane) · PMID 40326569 · null</div>
 <p class="cfind">Only five randomized trials (1,397 participants; interventions 16 weeks to 12 months, all primary prevention) met inclusion criteria. Trials reported either no myocardial infarctions or strokes in either arm or no clear difference (e.g. all-cause mortality RR 2.98, 95% CI 0.12 to 72.42 versus another dietary intervention); the reviewers concluded the effect of DASH on major cardiovascular outcomes remains inconclusive, certainty of evidence low to very low, with no secondary-prevention data and no trials assessing heart failure or revascularisation.</p></li></ol></div></details>
 </div>
 

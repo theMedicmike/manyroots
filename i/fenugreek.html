@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/blood-sugar">For blood sugar &amp; type 2 diabetes</a></h4>
+
 <p style="margin:8px 0 12px">Fenugreek seeds, a common curry spice, have been tested in a handful of small studies in people with type 2 diabetes and appear to lower blood sugar modestly, and one 3-year Indian study found people with prediabetes who ate 10 grams a day were less likely to develop diabetes. These studies are small and not very rigorous, so treat the result as promising rather than proven, and as something to add alongside your usual care rather than in place of any medication you have been prescribed. Fenugreek is generally well tolerated, but it is a legume related to peanut and can trigger allergies, and it may increase the effect of blood thinners like warfarin.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Fenugreek is not a replacement for prescribed glucose-lowering medication, and nothing here is a reason to stop or reduce a prescription. Trials report mild gastrointestinal side effects in some participants, with no hepatic or renal toxicity and no severe adverse events (Kim et al. 2023, PMID 37762302). A well-known effect is a maple-syrup odour of urine and sweat, harmless in itself but not always harmless in context - see the pregnancy and breastfeeding warning above, where the same odour in a newborn has triggered investigation for a metabolic disease. The Cochrane review of oral galactagogues lists that odour in mothers and urticaria in infants among the minor adverse effects reported across natural galactagogue trials as a group, of which fenugreek was one of many botanicals studied (Foong et al. 2020, PMID 32421208). Doses of 10 g/day were taken for 3 years without reported adverse effects in the prevention trial, but adverse-event monitoring in that study was not systematic.</p>
@@ -118,46 +133,48 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>With one partial exception, every endpoint here is a surrogate: fasting glucose, post-load glucose, HbA1c. No fenugreek trial has measured cardiovascular events, kidney disease or death; the single trial reporting incident diabetes uses a diagnosis that is itself defined by glucose thresholds. In type 2 diabetes, Neelakantan et al. pooled 10 trials of at least one week: fasting glucose -0.96 mmol/L (95% CI -1.52 to -0.40, I2 80%), 2-hour post-load glucose -2.19 mmol/L, and HbA1c -0.85% (95% CI -1.49 to -0.22) from only three trials, with significant effects seen only at medium or high seed doses in people with diabetes and most trials of low methodological quality. Khodamoradi et al. (12 articles) found fasting glucose -12.94 mg/dL (I2 85%) and HbA1c -0.58%; Kim et al. (10 RCTs, 706 participants) found reductions in fasting glucose, 2-hour glucose and HbA1c but no significant change in HOMA-IR; and Shabil et al. (14 trials, 894 participants) found no significant change in fasting glucose (MD 3.70 mg/dL, 95% CI -27.02 to 19.62, P=0.76) or postprandial glucose (P=0.72) despite an HbA1c reduction of 0.88, flagging trial quality and heterogeneity as a concern. The better-controlled small trials are less impressive: 1 g/day extract for 2 months in 25 newly diagnosed patients left fasting and 2-hour glucose no different from placebo (though glucose and insulin AUC fell), and 2 g/day seed for 12 weeks with only 9 completers produced a non-significant fasting glucose drop (P=0.63) while fasting insulin rose. The one trial with a progression endpoint is in prediabetes: 5 g seed powder twice daily for 3 years (n=66 versus 74 controls) significantly reduced the cumulative incidence of diabetes, lowered fasting and postprandial glucose and LDL cholesterol and raised serum insulin, with controls 4.2 times more likely to develop diabetes and no adverse effects reported; the abstract does not describe blinding, and the result has not been replicated.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 5-10 g/day whole seed powder before meals (10 g/day for 3 years in the prediabetes prevention trial; 2 g/day in a small type 2 diabetes trial); 1 g/day hydroalcoholic seed extract for 2 months; standardized total-saponin capsules three times daily for 12 weeks as an add-on to sulfonylureas.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Four meta-analyses exist and point the same direction, but they pool small, short, mostly low-quality trials: the HbA1c estimate in the 2014 meta-analysis rests on only three trials, the 2023 meta-analysis found no significant effect on fasting or postprandial glucose despite an HbA1c signal, and the better-controlled small placebo-controlled trials found no between-group difference in fasting glucose. The one trial with any progression endpoint (3-year prevention of diabetes in prediabetes) is encouraging but small (140 people), does not describe blinding, and is unreplicated. Everything else is a surrogate marker and no trial has measured cardiovascular, kidney or mortality outcomes. Small, few and preliminary trials with a favourable trend is the definition of early.</p></div></details>
+
+<div class="ebase"><span><b>10</b> sources</span><span><b>6</b> trial-level or better</span><span><b>4</b> null or negative</span><span><b>2</b> mixed</span><span>2001–2026</span></div>
 <details open><summary>Sources (10)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/26436069/" data-pmid="26436069" rel="nofollow noopener" target="_blank">Role of Fenugreek in the prevention of type 2 diabetes mellitus in prediabetes.</a>
-<div class="cwho">Gaddam A, Galla C, Thummisetti S, Marikanty RK, Palanisamy UD, Rao PV, 2015 · PMID 26436069 · positive</div>
+<div class="cwho"><span class="ctype">Journal article</span>Gaddam A, Galla C, Thummisetti S, Marikanty RK, Palanisamy UD, Rao PV, 2015 · PMID 26436069 · positive</div>
 <p class="cfind">3-year randomized controlled parallel study in prediabetes (fenugreek n=66, controls n=74, aged 30-70): fenugreek powder 5 g twice daily before meals significantly reduced the cumulative incidence of diabetes and lowered fasting and postprandial plasma glucose and LDL cholesterol while raising serum insulin; controls had a 4.2 times higher chance of developing diabetes; no adverse effects reported. The abstract does not describe blinding or placebo control.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/24438170/" data-pmid="24438170" rel="nofollow noopener" target="_blank">Effect of fenugreek (Trigonella foenum-graecum L.) intake on glycemia: a meta-analysis of clinical trials.</a>
-<div class="cwho">Neelakantan N, Narayanan M, de Souza RJ, van Dam RM, 2014 · PMID 24438170 · positive</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Neelakantan N, Narayanan M, de Souza RJ, van Dam RM, 2014 · PMID 24438170 · positive</div>
 <p class="cfind">10 trials of at least 1 week: fenugreek changed fasting blood glucose by -0.96 mmol/L (95% CI -1.52 to -0.40, I2 80%, 10 trials), 2-hour post-load glucose by -2.19 mmol/L (95% CI -3.19 to -1.19, 7 trials) and HbA1c by -0.85% (95% CI -1.49 to -0.22, I2 0%, only 3 trials); significant glucose effects were found only with medium or high doses in people with diabetes, and most trials were of low methodological quality.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/32951700/" data-pmid="32951700" rel="nofollow noopener" target="_blank">The Effects of Fenugreek on Cardiometabolic Risk Factors in Adults: A Systematic Review and Meta-analysis.</a>
-<div class="cwho">Khodamoradi K, Khosropanah MH, Ayati Z, et al., 2020 · PMID 32951700 · positive</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Khodamoradi K, Khosropanah MH, Ayati Z, et al., 2020 · PMID 32951700 · positive</div>
 <p class="cfind">12 articles pooled: fenugreek seed versus placebo reduced fasting blood sugar by 12.94 mg/dL (95% CI -21.39 to -4.49, I2 85%), HbA1c by 0.58% (95% CI -0.99 to -0.17, I2 0%), total cholesterol by 9.13 mg/dL and LDL-C by 11.11 mg/dL, with no significant change in other cardiometabolic parameters; the authors caution that high heterogeneity in glycaemic status means findings must be interpreted with great caution.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/37762302/" data-pmid="37762302" rel="nofollow noopener" target="_blank">The Effect of Fenugreek in Type 2 Diabetes and Prediabetes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.</a>
-<div class="cwho">Kim J, Noh W, Kim A, Choi Y, Kim YS, 2023 · PMID 37762302 · positive</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Kim J, Noh W, Kim A, Choi Y, Kim YS, 2023 · PMID 37762302 · positive</div>
 <p class="cfind">10 studies, 706 participants: fenugreek significantly reduced fasting blood glucose, 2-hour OGTT glucose and HbA1c, but did NOT significantly reduce HOMA-IR; total cholesterol, triglycerides and HDL-C improved while LDL-C and BMI did not; no hepatic or renal toxicity and no severe adverse events were observed, despite mild gastrointestinal side effects in some studies.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/36837450/" data-pmid="36837450" rel="nofollow noopener" target="_blank">Effect of Fenugreek on Hyperglycemia: A Systematic Review and Meta-Analysis.</a>
-<div class="cwho">Shabil M, Bushi G, Bodige PK, et al., 2023 · PMID 36837450 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Shabil M, Bushi G, Bodige PK, et al., 2023 · PMID 36837450 · mixed</div>
 <p class="cfind">14 trials, 894 participants: no significant effect on fasting blood glucose (MD 3.70, 95% CI -27.02 to 19.62, P=0.76) or postprandial blood glucose (MD -10.61, 95% CI -68.48 to 47.26, P=0.72), while HbA1c fell (MD -0.88, 95% CI -1.49 to -0.27); the authors flag the quality and heterogeneity of the included trials as a concern and call for rigorous double-blinded RCTs.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/11868855/" data-pmid="11868855" rel="nofollow noopener" target="_blank">Effect of Trigonella foenum-graecum (fenugreek) seeds on glycaemic control and insulin resistance in type 2 diabetes mellitus: a double blind placebo controlled study.</a>
-<div class="cwho">Gupta A, Gupta R, Lal B, 2001 · PMID 11868855 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Gupta A, Gupta R, Lal B, 2001 · PMID 11868855 · mixed</div>
 <p class="cfind">25 newly diagnosed type 2 diabetes patients randomized to 1 g/day hydroalcoholic fenugreek seed extract (n=12) or placebo plus usual care (n=13) for 2 months: fasting glucose (148.3 to 119.9 vs 137.5 to 113.0 mg/dL) and 2-hour post-glucose values were not different between groups, although glucose and insulin AUC were significantly lower (P&lt;0.001), percent insulin sensitivity rose and triglycerides fell with fenugreek.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/31148988/" data-pmid="31148988" rel="nofollow noopener" target="_blank">A randomized controlled clinical trial evaluating the effect of Trigonella foenum-graecum (fenugreek) versus glibenclamide in patients with diabetes.</a>
-<div class="cwho">Najdi RA, Hagras MM, Kamel FO, Magadmi RM, 2019 · PMID 31148988 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Najdi RA, Hagras MM, Kamel FO, Magadmi RM, 2019 · PMID 31148988 · null</div>
 <p class="cfind">12 patients with uncontrolled type 2 diabetes on metformin randomized to fenugreek 2 g/day or glibenclamide 5 mg/day for 12 weeks, with only 9 completing: fenugreek produced an insignificant drop in fasting blood glucose (P=0.63) while fasting insulin rose significantly (P=0.04); no notable adverse effects on hepatic or renal function.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/36156816/" data-pmid="36156816" rel="nofollow noopener" target="_blank">Relevance of sensitization to legumes in peanut-allergic children.</a>
-<div class="cwho">Muller T, Luc A, Adam T, et al., 2022 · PMID 36156816 · negative</div>
+<div class="cwho"><span class="ctype">Journal article</span>Muller T, Luc A, Adam T, et al., 2022 · PMID 36156816 · negative</div>
 <p class="cfind">Among 195 peanut-allergic children, 122 (63.9%) were sensitized to at least one other legume, with fenugreek the most frequent (N=61, 66.3%); allergy to at least one legume was confirmed in 34 of the 122 sensitized children (27.9%), and half of the allergic reactions to legumes other than peanut were severe.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/11532065/" data-pmid="11532065" rel="nofollow noopener" target="_blank">Pseudo-maple syrup urine disease due to maternal prenatal ingestion of fenugreek.</a>
-<div class="cwho">Korman SH, Cohen E, Preminger A, 2001 · PMID 11532065 · negative</div>
+<div class="cwho"><span class="ctype">Journal article</span>Korman SH, Cohen E, Preminger A, 2001 · PMID 11532065 · negative</div>
 <p class="cfind">Case report: fenugreek, maple syrup and the urine of maple syrup urine disease (MSUD) patients share a characteristic odour originating from a common component, sotolone; ingestion of fenugreek by mothers during labour resulted in a maple syrup-like odour in their newborn infants, leading to a false suspicion of MSUD. Added to substantiate the pregnancy and breastfeeding warning; the audit had attached this claim to PMID 10475807, whose PubMed record describes a false diagnosis after ingestion of herbal tea and does not state maternal ingestion.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/41625343/" data-pmid="41625343" rel="nofollow noopener" target="_blank">Exploring the Adverse Effects of Fenugreek in Humans: A Scoping Review.</a>
-<div class="cwho">Amiri Ardekani E, Parvizi MM, Zare R, Mosaffa Jahromi M, Rampp T, Pasalar M, 2026 · PMID 41625343 · negative</div>
+<div class="cwho"><span class="ctype">Journal article</span>Amiri Ardekani E, Parvizi MM, Zare R, Mosaffa Jahromi M, Rampp T, Pasalar M, 2026 · PMID 41625343 · negative</div>
 <p class="cfind">Scoping review of 60 articles published January 1990 to September 2024: 14 clinical trials reported adverse effects, 23 reported none and 13 gave no information; 10 case reports or series described allergic or hypersensitivity reactions. The most common adverse effect was mild gastrointestinal discomfort after oral consumption; others included hypoglycaemia, potential hypokalaemia, allergic reactions, a maple syrup odour in the urine, sweat or skin of infants and mothers, and interactions with certain medications. The authors conclude fenugreek is generally safe with mostly mild self-limiting effects and no attributed fatalities.</p></li></ol></div></details>
 </div>
 

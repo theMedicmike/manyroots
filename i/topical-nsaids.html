@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/chronic-pain">For chronic pain</a></h4>
+
 <p style="margin:8px 0 12px">Rub-on and patch anti-inflammatories do help knee arthritis, without loading the same amount of drug into the rest of the body, which is why guidelines suggest trying them first for the knee. Be realistic about the size of it: roughly one person in seven to ten does better on the medicated gel than on the plain gel base, and the plain base by itself helps about half of people. Almost all the research is in knee arthritis — the one back-pain trial found it no better than placebo — and the usual side effect is a mild skin reaction where you apply it.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Tolerability is the main advantage over oral NSAIDs. In the 192-trial osteoarthritis network meta-analysis, no topical NSAID preparation showed an increased risk of dropout or of any adverse event, compared with 18.5% and 29.8% of oral preparations. The most common problem is a mild local skin reaction at the application site, which was increased with topical diclofenac versus carrier but not with topical ketoprofen; some topical NSAIDs, particularly ketoprofen, can cause photosensitivity, so avoid sun exposure on treated skin. Systemic absorption is much lower than with oral dosing but is not zero, so the class cautions still apply in principle to people with ulcer, kidney or cardiovascular risk. Apply only to intact skin, wash hands afterwards, and do not occlude, bandage tightly or apply heat over the site.</p>
@@ -118,30 +133,34 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>Evidence for topical NSAIDs in chronic musculoskeletal pain is substantial but confined almost entirely to osteoarthritis. A Cochrane review of 39 studies (10,631 participants) found topical diclofenac produced clinical success (at least 50% pain relief or equivalent) with an NNT of 9.8 (95% CI 7.1 to 16) and topical ketoprofen an NNT of 6.9 (95% CI 5.4 to 9.3) over 6 to 12 weeks, both moderate quality; the review states explicitly that these results derive almost completely from knee osteoarthritis and that there is no evidence for other chronic painful conditions. That same review found the vehicle carrier alone produced clinical success in around half of participants — roughly twice the response seen with oral placebo — so a meaningful part of the observed benefit is not the NSAID. In the 192-trial osteoarthritis network meta-analysis, topical diclofenac 70-81 and 140-160 mg/day had at least a 92.3% probability of exceeding the minimal clinically important pain reduction, and notably 0% of topical NSAID preparations showed an increased risk of dropout or of any adverse event. Outside osteoarthritis the picture is not favourable: a systematic review of responder analyses in chronic low back pain found that the one identified topical NSAID trial produced benefit similar to placebo. Head-to-head, a 12-month primary care trial found topical and oral ibuprofen equivalent on WOMAC score (difference 2 points, 95% CI -2 to 6), with fewer minor adverse effects on topical but more participants switching away from topical because of inadequate relief.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> Topical diclofenac approximately 70-81 mg/day and 140-160 mg/day applied to the knee in the network meta-analysis. Cochrane pooled topical diclofenac and ketoprofen gels, creams, solutions and plasters applied at least once daily over 6 to 12 weeks.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Graded down from strong. The efficacy evidence is real but narrower and weaker than a strong grade implies. Cochrane rated topical diclofenac and ketoprofen only moderate quality, with numbers needed to treat for clinical success of 9.8 and 6.9 respectively — roughly one person in seven to ten does better on the drug than on the carrier. The same review found the carrier gel alone produced clinical success in about half of participants, roughly twice the oral placebo response, meaning a large share of what people feel is not the NSAID. Every trial in that review was in osteoarthritis, and in chronic low back pain the single identified randomised trial found benefit similar to placebo. Guideline support is also narrower than it first looks: the ACR strong recommendation covers knee osteoarthritis only, hand osteoarthritis is conditional, and hip osteoarthritis is not covered. What survives is genuine and clinically useful — the largest osteoarthritis network meta-analysis names topical diclofenac 70-81 mg/day first-line for knee osteoarthritis, and no topical preparation showed increased adverse events or dropouts — but that is the definition of moderate, not strong.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/ace-inhibitors-arbs">ACE inhibitors and ARBs</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>6</b> sources</span><span><b>5</b> trial-level or better</span><span><b>1</b> null or negative</span><span><b>2</b> mixed</span><span>2008–2025</span></div>
 <details open><summary>Sources (6)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/27103611/" data-pmid="27103611" rel="nofollow noopener" target="_blank">Topical NSAIDs for chronic musculoskeletal pain in adults.</a>
-<div class="cwho">Derry S, Conaghan P, Da Silva JAP, Wiffen PJ, Moore RA, 2016 (Cochrane Database Syst Rev) · PMID 27103611 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Derry S, Conaghan P, Da Silva JAP, Wiffen PJ, Moore RA, 2016 (Cochrane Database Syst Rev) · PMID 27103611 · mixed</div>
 <p class="cfind">39 studies, 10,631 participants; 33 compared a topical NSAID with carrier. Over 6-12 weeks, topical diclofenac gave an NNT for clinical success of 9.8 (95% CI 7.1 to 16) across 6 trials (2343 participants) and topical ketoprofen 6.9 (95% CI 5.4 to 9.3) across 4 trials (2573 participants), both moderate quality. All included studies examined osteoarthritis; the authors state there is no evidence for other chronic painful conditions and that relief is achieved 'for a minority of people'. Clinical success with carrier alone occurred in around half of participants, roughly twice the oral placebo response, and topical diclofenac increased mild local skin reactions.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/33483410/" data-pmid="33483410" rel="nofollow noopener" target="_blank">PEER systematic review of randomized controlled trials: Management of chronic low back pain in primary care.</a>
-<div class="cwho">Kolber MR, Ton J, Thomas B, et al., 2021 (Can Fam Physician) · PMID 33483410 · null</div>
+<div class="cwho"><span class="ctype top">Systematic review</span>Kolber MR, Ton J, Thomas B, et al., 2021 (Can Fam Physician) · PMID 33483410 · null</div>
 <p class="cfind">63 RCTs reporting responder analyses across 15 treatments for chronic low back pain. The single identified trial of topical NSAIDs found benefit similar to that of placebo. By contrast, moderate-certainty evidence supported exercise (RR 1.71, 95% CI 1.37 to 2.15; NNT 7), oral NSAIDs (RR 1.44, 95% CI 1.17 to 1.78; NNT 6) and duloxetine (RR 1.25, 95% CI 1.13 to 1.38; NNT 10), with exercise the only intervention showing sustained benefit to 48 weeks.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/34642179/" data-pmid="34642179" rel="nofollow noopener" target="_blank">Effectiveness and safety of non-steroidal anti-inflammatory drugs and opioid treatment for knee and hip osteoarthritis: network meta-analysis.</a>
-<div class="cwho">da Costa BR, Pereira TV, Saadat P, et al., 2021 (BMJ) · PMID 34642179 · positive</div>
+<div class="cwho"><span class="ctype top">Network meta-analysis</span>da Costa BR, Pereira TV, Saadat P, et al., 2021 (BMJ) · PMID 34642179 · positive</div>
 <p class="cfind">192 trials, 102,829 participants. Topical diclofenac 70-81 and 140-160 mg/day had at least 92.3% probability of exceeding the minimal clinically important reduction in pain. Crucially, 0% of topical NSAID preparations showed an increased risk of dropout due to adverse events and 0% an increased risk of any adverse event, compared with 18.5% and 29.8% of oral NSAIDs. The authors concluded topical diclofenac 70-81 mg/day should be considered first-line pharmacological treatment for knee osteoarthritis because of reduced systemic exposure.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/31908149/" data-pmid="31908149" rel="nofollow noopener" target="_blank">2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee.</a>
-<div class="cwho">Kolasinski SL, Neogi T, Hochberg MC, et al., 2020 (Arthritis Care Res) · PMID 31908149 · positive</div>
+<div class="cwho"><span class="ctype top">Guideline</span>Kolasinski SL, Neogi T, Hochberg MC, et al., 2020 (Arthritis Care Res) · PMID 31908149 · positive</div>
 <p class="cfind">Topical NSAIDs received a strong recommendation for knee osteoarthritis. For hand osteoarthritis the recommendation was only conditional, and topical NSAIDs were not among the strong recommendations for hip osteoarthritis — consistent with limited penetration to deeper joints.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/18056743/" data-pmid="18056743" rel="nofollow noopener" target="_blank">Advice to use topical or oral ibuprofen for chronic knee pain in older people: randomised controlled trial and patient preference study.</a>
-<div class="cwho">Underwood M, Ashby D, Cross P, et al., 2007 (BMJ) · PMID 18056743 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Underwood M, Ashby D, Cross P, et al., 2007 (BMJ) · PMID 18056743 · mixed</div>
 <p class="cfind">282 participants aged 50 or over in the randomised trial plus 303 in a parallel preference study, 12 months. Change in global WOMAC score was equivalent: topical minus oral difference 2 points (95% CI -2 to 6) in the RCT and 1 point (95% CI -4 to 6) in the preference study. Oral users had more respiratory adverse effects (17% vs 7%) and more treatment changes due to adverse effects (16% vs 1%), but more participants in the topical group had chronic pain grade III or IV at three months and more changed treatment because of ineffectiveness.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/40065343/" data-pmid="40065343" rel="nofollow noopener" target="_blank">Efficacy and safety of different topical diclofenac formulations for the treatment of knee osteoarthritis: a meta-analysis of short-term and long-term treatment comparisons.</a>
-<div class="cwho">Chen ZR, Chen BK, Li P, Feng K, 2025 (BMC Musculoskelet Disord) · PMID 40065343 · positive</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Chen ZR, Chen BK, Li P, Feng K, 2025 (BMC Musculoskelet Disord) · PMID 40065343 · positive</div>
 <p class="cfind">12 RCTs in knee osteoarthritis. The diclofenac patch gave the largest short-term pain effect at 1-2 weeks (SMD -0.64, 95% CI -0.90 to -0.39), while gel and solution showed sustained efficacy at 3-6 and 8-12 weeks. Skin-related adverse events, systemic side effects and withdrawal rates remained low across all formulations; overall evidence quality was rated moderate to high.</p></li></ol></div></details>
 </div>
 

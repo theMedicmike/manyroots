@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/chronic-pain">For chronic pain</a></h4>
+
 <p style="margin:8px 0 12px">Paracetamol (acetaminophen) is the one that looks worst under the microscope. Large, high-quality reviews found it works no better than a dummy pill for low back pain, and for hip or knee arthritis the improvement is real but far too small for most people to actually feel. It is still one of the gentler options at normal doses, so some people use it, but it is fair to say the research does not support relying on it for long-term musculoskeletal pain.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>At standard doses acetaminophen is generally well tolerated: pooled randomised data show overall adverse event rates indistinguishable from placebo (RR 1.01, 95% CI 0.92 to 1.11). The main established hazard is hepatotoxicity, and randomised trials found abnormal liver function tests nearly four times more common than with placebo (RR 3.79, 95% CI 1.94 to 7.39), though the clinical significance of those transient enzyme changes is uncertain. Observational cohorts show dose-response signals for mortality, cardiovascular, gastrointestinal and renal harm at the upper end of standard analgesic dosing. The most common real-world danger is accidental overdose from stacking products: many combination cold, flu, sleep and opioid preparations contain acetaminophen, and totals add up quickly. Do not exceed the daily maximum on the label, and count every source.</p>
@@ -118,26 +133,28 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>Evidence for acetaminophen in chronic musculoskeletal pain is adequate and largely null. A BMJ systematic review of 13 randomised placebo-controlled trials rated as high quality found acetaminophen ineffective for low back pain — pain intensity weighted mean difference -0.5 (95% CI -2.9 to 1.9) on a 0-100 scale, disability 0.4 (95% CI -1.7 to 2.5) — and for hip or knee osteoarthritis a statistically significant but not clinically important pain effect of -3.7 (95% CI -5.5 to -1.9). A subsequent Cochrane review of 10 trials (3541 participants) confirmed this with high-quality evidence: pain improved by 3.23 points (95% CI 1.02 to 5.43) on a 0-100 scale against a minimal clinically important difference of 9, and physical function by 2.9 points (95% CI 0.95 to 4.89) against a threshold of 10, with no difference between lower and higher doses. A Cochrane review specific to low back pain found high-quality evidence of no difference from placebo in acute low back pain at 1, 2, 4 and 12 weeks, and rated evidence for chronic low back pain as very low quality because the only relevant trial has been retracted. Overall adverse event rates match placebo (RR 1.01, 95% CI 0.92 to 1.11), but abnormal liver function tests were nearly four times more common (RR 3.79, 95% CI 1.94 to 7.39), and observational cohort data show dose-response signals for mortality, cardiovascular, gastrointestinal and renal outcomes.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 1.95 to 4 g/day across trials, most commonly 3 to 4 g/day, with most trials following participants for about three months. Subgroup analysis found no difference in effect between 3.0 g/day or less and 3.9 g/day or more, so the null result is not explained by underdosing.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> This is the clearest case in the group of adequate evidence returning a null or clinically meaningless result. Two independent high-quality syntheses — a BMJ meta-analysis and a Cochrane review — both rated their evidence 'high quality' and both concluded acetaminophen is ineffective for low back pain and provides only minimal, sub-threshold benefit in hip and knee osteoarthritis. In the Cochrane review the pain improvement was 3.23 points on a 0-100 scale against a minimal clinically important difference of 9. Both author groups explicitly called for reconsideration of guidelines recommending it first-line, and the ACR downgraded it to a conditional recommendation. The label 'not_supported' refers to efficacy as a standalone analgesic for this condition; it does not mean the drug is dangerous at standard doses, and its low absolute harm profile is why it still appears in guidelines at all.</p></div></details>
+
+<div class="ebase"><span><b>5</b> sources</span><span><b>4</b> trial-level or better</span><span><b>3</b> null or negative</span><span><b>2</b> mixed</span><span>2015–2020</span></div>
 <details open><summary>Sources (5)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25828856/" data-pmid="25828856" rel="nofollow noopener" target="_blank">Efficacy and safety of paracetamol for spinal pain and osteoarthritis: systematic review and meta-analysis of randomised placebo controlled trials.</a>
-<div class="cwho">Machado GC, Maher CG, Ferreira PH, et al., 2015 (BMJ) · PMID 25828856 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Machado GC, Maher CG, Ferreira PH, et al., 2015 (BMJ) · PMID 25828856 · null</div>
 <p class="cfind">12 reports covering 13 randomised trials. High-quality evidence that paracetamol is ineffective for low back pain: pain -0.5 (95% CI -2.9 to 1.9), disability 0.4 (95% CI -1.7 to 2.5), quality of life 0.4 (95% CI -0.9 to 1.7) on 0-100 scales. For hip or knee osteoarthritis, a significant but not clinically important effect on pain (-3.7, 95% CI -5.5 to -1.9) and disability (-2.9, 95% CI -4.9 to -0.9). Patients on paracetamol were nearly four times more likely to have abnormal liver function tests (RR 3.8, 95% CI 1.9 to 7.4). Authors called for reconsideration of guideline recommendations.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/30801133/" data-pmid="30801133" rel="nofollow noopener" target="_blank">Paracetamol versus placebo for knee and hip osteoarthritis.</a>
-<div class="cwho">Leopoldino AO, Machado GC, Ferreira PH, et al., 2019 (Cochrane Database Syst Rev) · PMID 30801133 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Leopoldino AO, Machado GC, Ferreira PH, et al., 2019 (Cochrane Database Syst Rev) · PMID 30801133 · mixed</div>
 <p class="cfind">10 randomised placebo-controlled trials, 3541 participants, doses 1.95-4 g/day, most followed for three months. High-quality evidence of no clinically important improvement: pain 3.23 points better (95% CI 1.02 to 5.43) on a 0-100 scale against a minimal clinically important difference of 9, and physical function 2.9 points better (95% CI 0.95 to 4.89) against a threshold of 10. Adverse events were similar (325 vs 328 per 1000; RR 1.01, 95% CI 0.92 to 1.11) but abnormal liver function was more common (RR 3.79, 95% CI 1.94 to 7.39). Effects did not differ by dose. The authors state their results call for reconsideration of first-line recommendations.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/27271789/" data-pmid="27271789" rel="nofollow noopener" target="_blank">Paracetamol for low back pain.</a>
-<div class="cwho">Saragiotto BT, Machado GC, Ferreira ML, Pinheiro MB, Abdel Shaheed C, Maher CG, 2016 (Cochrane Database Syst Rev) · PMID 27271789 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Saragiotto BT, Machado GC, Ferreira ML, Pinheiro MB, Abdel Shaheed C, Maher CG, 2016 (Cochrane Database Syst Rev) · PMID 27271789 · null</div>
 <p class="cfind">3 trials, 1825 participants. High-quality evidence of no difference between paracetamol 4 g/day and placebo in acute low back pain at 1, 2, 4 and 12 weeks for pain and disability, and no effect on quality of life, function, global impression of recovery or sleep quality. For chronic low back pain, only very low-quality evidence from a single trial that has since been retracted; no trials were found in subacute low back pain.</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25732175/" data-pmid="25732175" rel="nofollow noopener" target="_blank">Paracetamol: not as safe as we thought? A systematic literature review of observational studies.</a>
-<div class="cwho">Roberts E, Delgado Nunes V, Buckner S, et al., 2016 (Ann Rheum Dis) · PMID 25732175 · negative</div>
+<div class="cwho"><span class="ctype top">Systematic review</span>Roberts E, Delgado Nunes V, Buckner S, et al., 2016 (Ann Rheum Dis) · PMID 25732175 · negative</div>
 <p class="cfind">8 cohort studies at standard analgesic doses in general adult populations. Dose-response relationships were seen across most endpoints: relative rate of mortality rising to 1.63 (95% CI 1.58 to 1.68), all cardiovascular adverse events rising to a risk ratio of 1.68 (95% CI 1.10 to 2.57), gastrointestinal events or bleeds to 1.49 (95% CI 1.34 to 1.66), and odds of a 30% or greater fall in eGFR to 2.19 (95% CI 1.4 to 3.43). Authors caution that channelling bias may have had an important impact, but that the dose-response pattern suggests considerable toxicity at the upper end of standard dosing.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/31908149/" data-pmid="31908149" rel="nofollow noopener" target="_blank">2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee.</a>
-<div class="cwho">Kolasinski SL, Neogi T, Hochberg MC, et al., 2020 (Arthritis Care Res) · PMID 31908149 · mixed</div>
+<div class="cwho"><span class="ctype top">Guideline</span>Kolasinski SL, Neogi T, Hochberg MC, et al., 2020 (Arthritis Care Res) · PMID 31908149 · mixed</div>
 <p class="cfind">Acetaminophen received only a conditional recommendation for hand, hip and knee osteoarthritis, alongside duloxetine and tramadol — in contrast to the strong recommendations given to exercise, weight loss, oral NSAIDs and topical NSAIDs for knee OA. This represents a downgrade from acetaminophen's historic position as first-line analgesic.</p></li></ol></div></details>
 </div>
 

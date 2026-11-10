@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/insomnia">For insomnia</a></h4>
+
 <p style="margin:8px 0 12px">Valerian root is probably the most-studied herbal sleep aid, and unfortunately that is exactly why we can say the evidence does not back it up: when researchers pool the careful studies, valerian does not meaningfully shorten the time it takes to fall asleep or improve measured sleep. Some people report feeling their sleep is better, which may be a real subjective effect, but the American sleep-medicine guideline advises against using it for insomnia. It appears fairly safe if you do choose to try it, though one pooled analysis counted somewhat more minor complaints with valerian than with placebo.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Tolerability across the trial literature is largely reassuring: the 2020 systematic review (60 studies, n=6,894) reported no severe adverse events in participants aged 7-80, the 2024 umbrella review described a good safety profile, and the 2006 meta-analysis found no excess side effects versus placebo. One pooled analysis (Leach &amp; Page 2015) did, however, report a greater number of adverse events per person with valerian than with placebo, so minor complaints (e.g., morning grogginess, gastrointestinal upset) are possible.</p>
@@ -118,30 +133,34 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>Evidence for valerian in insomnia is extensive but does not support efficacy on quantitative outcomes. A meta-analysis of 18 randomized placebo-controlled trials found a mean difference in sleep latency of 0.70 minutes (95% CI -3.44 to 4.83) and a standardized mean difference on sleep-quality scales of -0.02 (95% CI -0.35 to 0.31); only the dichotomous self-report of improved sleep favored valerian (RR 1.37, 95% CI 1.05-1.78) (Fernandez-San-Martin 2010). An earlier meta-analysis of 16 trials (1,093 patients) similarly found a dichotomous benefit (RR 1.8, 95% CI 1.2-2.9) but with evidence of publication bias and significant methodologic problems across studies (Bent 2006), and a meta-analysis of herbal medicines for insomnia (14 RCTs, 1,602 participants) found no significant difference between valerian and placebo on any of 13 efficacy measures, with more adverse events per person reported with valerian than placebo (Leach &amp; Page 2015). A 2024 umbrella review of 8 systematic reviews concluded there is no evidence of efficacy for the treatment of insomnia, with any effect confined to subjective sleep quality and not demonstrated on quantitative or objective measures (Valente 2024). The 2017 American Academy of Sleep Medicine clinical practice guideline suggests that clinicians not use valerian for sleep onset or sleep maintenance insomnia in adults (weak recommendation) (Sateia 2017). A 2020 systematic review of 60 studies (n=6,894) argued that inconsistent results may reflect variable extract quality and reported no severe adverse events in subjects aged 7-80 years (Shinjyo 2020).</p>
 <p><b style="color:var(--ink)">Doses studied:</b> Doses, preparations, and treatment durations varied considerably across the pooled trials (a heterogeneity both meta-analyses flagged); no standardized effective dose has been established.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> A substantial trial base exists and the quantitative results are null: pooled sleep latency improved by 0.70 minutes and sleep-quality scales by SMD -0.02 in the 2010 meta-analysis, a 2024 umbrella review of 8 systematic reviews found no evidence of efficacy for insomnia, and the American Academy of Sleep Medicine clinical practice guideline explicitly suggests clinicians not use valerian for sleep onset or maintenance insomnia. The definition of not_supported (adequate evidence that is null/negative, or guidelines recommending against) is met on both counts.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/benzodiazepines">Benzodiazepines</a><a href="/i/prescription-sleep-medications">Prescription sleep medications</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>6</b> sources</span><span><b>5</b> trial-level or better</span><span><b>4</b> null or negative</span><span><b>2</b> mixed</span><span>2006–2024</span></div>
 <details open><summary>Sources (6)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/27998379/" data-pmid="27998379" rel="nofollow noopener" target="_blank">Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy of Sleep Medicine Clinical Practice Guideline.</a>
-<div class="cwho">Sateia MJ et al., 2017 (J Clin Sleep Med) · PMID 27998379 · negative</div>
+<div class="cwho"><span class="ctype top">Guideline</span>Sateia MJ et al., 2017 (J Clin Sleep Med) · PMID 27998379 · negative</div>
 <p class="cfind">The AASM guideline states: 'We suggest that clinicians not use valerian as a treatment for sleep onset or sleep maintenance insomnia (versus no treatment) in adults' (WEAK recommendation under GRADE).</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/20347389/" data-pmid="20347389" rel="nofollow noopener" target="_blank">Effectiveness of Valerian on insomnia: a meta-analysis of randomized placebo-controlled trials.</a>
-<div class="cwho">Fernandez-San-Martin MI et al., 2010 (Sleep Med) · PMID 20347389 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Fernandez-San-Martin MI et al., 2010 (Sleep Med) · PMID 20347389 · null</div>
 <p class="cfind">Across 18 RCTs, valerian did not improve quantitative outcomes: sleep latency mean difference 0.70 minutes (95% CI -3.44 to 4.83) and sleep-quality scale SMD -0.02 (95% CI -0.35 to 0.31); only dichotomous self-reported sleep-quality improvement favored valerian (RR 1.37, 95% CI 1.05-1.78).</p></li><li>
 <span class="cdir" style="background:var(--neg)" title="negative"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/38359657/" data-pmid="38359657" rel="nofollow noopener" target="_blank">Does valerian work for insomnia? An umbrella review of the evidence.</a>
-<div class="cwho">Valente V et al., 2024 (Eur Neuropsychopharmacol) · PMID 38359657 · negative</div>
+<div class="cwho"><span class="ctype top">Systematic review</span>Valente V et al., 2024 (Eur Neuropsychopharmacol) · PMID 38359657 · negative</div>
 <p class="cfind">Umbrella review of 8 eligible systematic reviews concluded valerian showed no evidence of efficacy for the treatment of insomnia; effectiveness on subjective sleep quality has not been demonstrated with quantitative or objective measurements, though the safety profile was good.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/17145239/" data-pmid="17145239" rel="nofollow noopener" target="_blank">Valerian for sleep: a systematic review and meta-analysis.</a>
-<div class="cwho">Bent S et al., 2006 (Am J Med) · PMID 17145239 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Bent S et al., 2006 (Am J Med) · PMID 17145239 · mixed</div>
 <p class="cfind">Across 16 randomized placebo-controlled trials (1,093 patients), the dichotomous outcome of improved sleep quality favored valerian (RR 1.8, 95% CI 1.2-2.9), but there was evidence of publication bias in this summary measure and most studies had significant methodologic problems.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25644982/" data-pmid="25644982" rel="nofollow noopener" target="_blank">Herbal medicine for insomnia: A systematic review and meta-analysis.</a>
-<div class="cwho">Leach MJ &amp; Page AT, 2015 (Sleep Med Rev) · PMID 25644982 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Leach MJ &amp; Page AT, 2015 (Sleep Med Rev) · PMID 25644982 · null</div>
 <p class="cfind">Across 14 RCTs (1,602 participants with insomnia) of herbal monopreparations including valerian, there was no statistically significant difference between any herbal medicine and placebo, or any herbal medicine and active control, for any of the thirteen measures of clinical efficacy; in contrast to kava, chamomile, and wuling, a greater number of adverse events per person were reported with valerian compared with placebo.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/33086877/" data-pmid="33086877" rel="nofollow noopener" target="_blank">Valerian Root in Treating Sleep Problems and Associated Disorders-A Systematic Review and Meta-Analysis.</a>
-<div class="cwho">Shinjyo N et al., 2020 (J Evid Based Integr Med) · PMID 33086877 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Shinjyo N et al., 2020 (J Evid Based Integr Med) · PMID 33086877 · mixed</div>
 <p class="cfind">Review of 60 studies (n=6,894) with meta-analysis of subjective sleep quality (10 studies, n=1,065) suggested inconsistent outcomes may be due to variable quality of herbal extracts; no severe adverse events were associated with valerian intake in subjects aged 7 to 80 years.</p></li></ol></div></details>
 </div>
 

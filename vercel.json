@@ -6,9 +6,42 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/i/cbt-anxiety",
+      "destination": "/i/cbt",
+      "permanent": true
+    },
+    {
+      "source": "/i/cbt-depression",
+      "destination": "/i/cbt",
+      "permanent": true
+    },
+    {
+      "source": "/i/cbt-pain",
+      "destination": "/i/cbt",
+      "permanent": true
+    },
+    {
+      "source": "/i/cbt-fatigue",
+      "destination": "/i/cbt",
+      "permanent": true
+    },
+    {
+      "source": "/i/cbt-ibs",
+      "destination": "/i/cbt",
+      "permanent": true
     }
   ]
 }

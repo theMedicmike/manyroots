@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -93,7 +107,7 @@ footer.site a{color:var(--muted)}
   .flag.emergency{background:#f4f4f4;border:1px solid #999;color:#111}
 }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Vitamin B12","description":"Early evidence for fatigue & low energy.","url":"https://www.manyroots.org/i/vitamin-b12","isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"Surplus vitamin B12 use does not reduce fatigue in patients with Irritable Bowel Syndrome or inflammatory bowel disease: A randomized double-blind placebo-controlled trial","identifier":"PMID:29460813"},{"@type":"ScholarlyArticle","name":"Vitamin B-12 treatment has limited effect on health-related quality of life among individuals with elevated plasma methylmalonic acid: a randomized placebo-controlled study","identifier":"PMID:12542554"},{"@type":"ScholarlyArticle","name":"Oral vitamin B12 versus intramuscular vitamin B12 for vitamin B12 deficiency","identifier":"PMID:29543316"},{"@type":"ScholarlyArticle","name":"Long term treatment with metformin in patients with type 2 diabetes and risk of vitamin B-12 deficiency: randomised placebo controlled trial","identifier":"PMID:20488910"},{"@type":"ScholarlyArticle","name":"Open Trial of Vitamin B12 Nasal Drops in Adults With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Comparison of Responders and Non-Responders","identifier":"PMID:31616305"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Vitamin B12","description":"Early evidence for fatigue & low energy.","url":"https://www.manyroots.org/i/vitamin-b12","isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"Surplus vitamin B(12) use does not reduce fatigue in patients with Irritable Bowel Syndrome or inflammatory bowel disease: A randomized double-blind placebo-controlled trial.","identifier":"PMID:29460813"},{"@type":"ScholarlyArticle","name":"Vitamin B-12 treatment has limited effect on health-related quality of life among individuals with elevated plasma methylmalonic acid: a randomized placebo-controlled study.","identifier":"PMID:12542554"},{"@type":"ScholarlyArticle","name":"Oral vitamin B(12) versus intramuscular vitamin B(12) for vitamin B(12) deficiency.","identifier":"PMID:29543316"},{"@type":"ScholarlyArticle","name":"Long term treatment with metformin in patients with type 2 diabetes and risk of vitamin B-12 deficiency: randomised placebo controlled trial.","identifier":"PMID:20488910"},{"@type":"ScholarlyArticle","name":"Open Trial of Vitamin B12 Nasal Drops in Adults With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Comparison of Responders and Non-Responders.","identifier":"PMID:31616305"}]}</script>
 <script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script>
 </head><body>
 <div class="wrap">
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/fatigue">For fatigue &amp; low energy</a></h4>
+
 <p style="margin:8px 0 12px">B12 deficiency is a real and very fixable cause of tiredness, and it is worth testing for - especially if you take metformin or acid-reducing medication, have had gut surgery, or eat little or no animal food. But the trials are clear about the other half of the story: if your B12 is already normal, extra B12 does not make you less tired. And nobody has actually run the trial in people who genuinely are deficient, so the case for it rests on clinical reasoning rather than proof. If you do need replacing, tablets work about as well as injections for getting your level back up.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>B12 has no established toxic upper intake level; excess is excreted in urine and high oral doses are generally well tolerated. In the Cochrane replacement review one trial reported no treatment-related adverse events while another reported 2 of 30 participants (6.7%) leaving early because of adverse events. Injections can cause local pain and, rarely, hypersensitivity reactions. Rapid correction of severe deficiency can drop serum potassium, so severe cases should be corrected under supervision.</p>
@@ -118,26 +133,30 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>A double-blind trial randomised 95 adults with disabling fatigue and normal baseline B12 (at or above 150 pmol/L) to 1,000 ug/day oral B12 or placebo for eight weeks; subjective fatigue fell almost identically in both arms (-8.1 plus or minus 9.5 versus -8.3 plus or minus 10.6; 95% CI for the difference -11.65 to 6.71), with no benefit for depression or quality of life, though the separate 'motivation' subscale did improve (-2.2 plus or minus 4.6, 95% CI -4.4 to -0.04). A placebo-controlled trial of weekly B12 injections in 140 non-hospitalised people with modestly raised plasma methylmalonic acid (0.40-2.00 umol/L) improved only one of eight SF-36 health-related quality-of-life dimensions at three months (general health, P=0.03); the authors questioned the benefit of treating on that biochemical finding alone. A 2018 Cochrane review of oral versus intramuscular B12 (3 trials, 153 participants) found comparable normalisation of serum B12 at lower cost with oral dosing on low-certainty evidence, and stated explicitly that no included trial reported clinical signs and symptoms of deficiency or health-related quality of life - so the fatigue question has never been tested in people with true deficiency. Testing matters partly because deficiency is often drug-induced: over 4.3 years, metformin lowered B12 by 19% versus placebo (95% CI -24% to -14%, P&lt;0.001) and raised the absolute risk of B12 deficiency below 150 pmol/L by 7.2 percentage points (95% CI 2.3 to 12.1, number needed to harm 13.8). The encouraging B12 reports in ME/CFS are uncontrolled: an open-label trial of nasal B12 drops in 51 patients raised median B12 from 328 to 973 pmol/L and had 34 patients report a favourable response, with no placebo arm and no blinding.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 1,000 ug/day oral cyanocobalamin for 8 weeks in the fatigue trial with normal baseline B12; weekly intramuscular injections for 4 weeks in the raised-methylmalonic-acid trial; Cochrane-reviewed replacement compared 1,000-2,000 ug/day orally with intramuscular dosing over 3-4 months.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Downgraded from moderate on adversarial verification. Every controlled trial testing B12 against fatigue has been null: high-dose B12 did nothing for fatigued people with normal levels, injections in people with only mildly abnormal methylmalonic acid improved one of eight quality-of-life dimensions, and the Cochrane review of replacement regimens states outright that no included trial reported clinical signs and symptoms - so the fatigue question has never been tested in people with genuine deficiency. The only encouraging fatigue report is open-label and uncontrolled. Finding and correcting a documented deficiency is standard clinical care and worth doing on other grounds, but as an intervention for fatigue this is preliminary human evidence, not modest positive evidence. It is not graded not_supported because the deficiency case is untested rather than refuted.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/metformin">Metformin</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>5</b> sources</span><span><b>4</b> trial-level or better</span><span><b>2</b> null or negative</span><span><b>1</b> mixed</span><span>2003–2019</span></div>
 <details open><summary>Sources (5)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/29460813/" data-pmid="29460813" rel="nofollow noopener" target="_blank">Surplus vitamin B12 use does not reduce fatigue in patients with Irritable Bowel Syndrome or inflammatory bowel disease: A randomized double-blind placebo-controlled trial</a>
-<div class="cwho">Scholten AM, et al., 2017 · PMID 29460813 · null</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/29460813/" data-pmid="29460813" rel="nofollow noopener" target="_blank">Surplus vitamin B(12) use does not reduce fatigue in patients with Irritable Bowel Syndrome or inflammatory bowel disease: A randomized double-blind placebo-controlled trial.</a>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Scholten AM, et al., 2017 · PMID 29460813 · null</div>
 <p class="cfind">95 patients with disabling fatigue and normal B12 (at or above 150 pmol/L) given 1,000 ug/day oral B12 or placebo for 8 weeks: no difference in subjective fatigue (-8.1 plus or minus 9.5 versus -8.3 plus or minus 10.6, 95% CI -11.65 to 6.71), and none for depression or quality of life. The CIS 'motivation' subscale did improve (-2.2 plus or minus 4.6, 95% CI -4.4 to -0.04). Authors concluded surplus B12 has no beneficial clinical effect.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/12542554/" data-pmid="12542554" rel="nofollow noopener" target="_blank">Vitamin B-12 treatment has limited effect on health-related quality of life among individuals with elevated plasma methylmalonic acid: a randomized placebo-controlled study</a>
-<div class="cwho">Hvas AM, et al., 2003 · PMID 12542554 · null</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/12542554/" data-pmid="12542554" rel="nofollow noopener" target="_blank">Vitamin B-12 treatment has limited effect on health-related quality of life among individuals with elevated plasma methylmalonic acid: a randomized placebo-controlled study.</a>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Hvas AM, et al., 2003 · PMID 12542554 · null</div>
 <p class="cfind">140 people with plasma methylmalonic acid 0.40-2.00 umol/L randomised to weekly B12 injections or placebo for 4 weeks: at 3 months only 1 of 8 SF-36 dimensions improved versus placebo (general health, P=0.03). Authors questioned the benefit of treating on raised methylmalonic acid alone.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/29543316/" data-pmid="29543316" rel="nofollow noopener" target="_blank">Oral vitamin B12 versus intramuscular vitamin B12 for vitamin B12 deficiency</a>
-<div class="cwho">Wang H, et al., 2018 (Cochrane) · PMID 29543316 · mixed</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/29543316/" data-pmid="29543316" rel="nofollow noopener" target="_blank">Oral vitamin B(12) versus intramuscular vitamin B(12) for vitamin B(12) deficiency.</a>
+<div class="cwho"><span class="ctype top">Systematic review</span>Wang H, et al., 2018 (Cochrane) · PMID 29543316 · mixed</div>
 <p class="cfind">3 RCTs, 153 participants: oral and intramuscular B12 normalised serum B12 similarly (low-certainty evidence) with lower cost for oral. No trial reported clinical signs and symptoms of deficiency, health-related quality of life, or treatment acceptability - the fatigue question has never been tested in genuinely deficient people.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/20488910/" data-pmid="20488910" rel="nofollow noopener" target="_blank">Long term treatment with metformin in patients with type 2 diabetes and risk of vitamin B-12 deficiency: randomised placebo controlled trial</a>
-<div class="cwho">de Jager J, et al., 2010 · PMID 20488910 · positive</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/20488910/" data-pmid="20488910" rel="nofollow noopener" target="_blank">Long term treatment with metformin in patients with type 2 diabetes and risk of vitamin B-12 deficiency: randomised placebo controlled trial.</a>
+<div class="cwho"><span class="ctype top">Randomised trial</span>de Jager J, et al., 2010 · PMID 20488910 · positive</div>
 <p class="cfind">390 patients over 4.3 years: metformin lowered B12 19% versus placebo (95% CI -24% to -14%, P&lt;0.001) and raised absolute risk of deficiency below 150 pmol/L by 7.2 percentage points (95% CI 2.3 to 12.1, number needed to harm 13.8). Establishes a common, testable, drug-induced cause rather than testing B12 for fatigue.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
-<a href="https://pubmed.ncbi.nlm.nih.gov/31616305/" data-pmid="31616305" rel="nofollow noopener" target="_blank">Open Trial of Vitamin B12 Nasal Drops in Adults With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Comparison of Responders and Non-Responders</a>
-<div class="cwho">van Campen CLM, et al., 2019 · PMID 31616305 · positive</div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/31616305/" data-pmid="31616305" rel="nofollow noopener" target="_blank">Open Trial of Vitamin B12 Nasal Drops in Adults With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Comparison of Responders and Non-Responders.</a>
+<div class="cwho"><span class="ctype">Journal article</span>van Campen CLM, et al., 2019 · PMID 31616305 · positive</div>
 <p class="cfind">51 ME/CFS patients completing 3 months of nasal B12: median serum B12 rose from 328 to 973 pmol/L and 34 reported a favourable response, with improved step count and CIS20r fatigue scale in responders. Open-label with no placebo arm and no blinding, so improvement cannot be separated from expectation.</p></li></ol></div></details>
 </div>
 

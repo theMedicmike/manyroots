@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/high-blood-pressure">For high blood pressure</a></h4>
+
 <p style="margin:8px 0 12px">Beetroot contains natural nitrate, which the body converts into a substance that relaxes blood vessels, and in short studies beetroot juice lowers the top blood pressure number by roughly 4 to 5 points. The catch is that most of that drop shows up when blood pressure is measured in a clinic - when researchers used 24-hour monitors worn at home, the benefit often vanished, and three careful studies found nothing at all: one in people already on blood pressure medicine, one in older adults, and the longest one, running 12 weeks, where the juice did nothing but eating more nitrate-rich vegetables did help. It is cheap and low-risk to try, but the effect is small and uncertain, and no study has tested whether it prevents heart attacks or strokes.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Beetroot juice was well tolerated in the randomized trials retrieved; the 4-week hypertension trial described the intervention as well tolerated and reported no safety concerns. The most common visible effect is harmless red or pink urine and stool (beeturia), which can alarm people who mistake it for blood. Concentrated juice carries a meaningful sugar and calorie load, and beetroot is a high-oxalate vegetable, which matters for people who form calcium-oxalate kidney stones. Commercial nitrate 'shots' vary considerably in actual nitrate content, so the delivered dose is often uncertain.</p>
@@ -118,34 +133,38 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>A 2013 meta-analysis of 16 crossover trials (254 participants, interventions from 2 hours to 15 days) found inorganic nitrate or beetroot juice lowered systolic BP by 4.4 mmHg (95% CI -5.9 to -2.8, P&lt;0.001) with a non-significant diastolic change of -1.1 mmHg (P=0.06) and a dose-response relationship with daily nitrate. The strongest single trial in the target population randomized 68 patients with hypertension to 250 mL/day of beetroot juice or nitrate-depleted placebo for 4 weeks and reported clinic BP reduction of 7.7/2.4 mmHg, 24-hour ambulatory reduction of 7.7/5.2 mmHg and home reduction of 8.1/3.8 mmHg, with no tachyphylaxis. Contrary evidence is substantial and comes largely from the same research groups: a meta-analysis restricted to trials of 1 week or longer (13 trials, 325 participants) found -4.1 mmHg systolic and -2.0 mmHg diastolic overall, but the effect was significant only in resting clinic measurement, with no significant change on 24-hour ambulatory or daily home monitoring. A 2024 meta-analysis in patients meeting European Society of Hypertension criteria (11 trials, 349 patients) similarly found clinic systolic -5.31 mmHg (95% CI -7.46 to -3.16, I2=64%) but no significant effect on clinic diastolic or any 24-hour outcome, rating certainty of evidence low. Three null results are directly relevant: a randomized double-blind crossover trial in 27 treated hypertensive adults produced 3-fold higher plasma nitrite and nitrate but no difference in home or 24-hour ambulatory BP; an individual-participant meta-analysis of four trials in 85 adults aged 55-76 found the pooled effect on all 24-hour ambulatory outcomes was not significant; and a 12-week trial in 77 (pre)hypertensive middle-aged and older adults found beetroot juice at 400 mg nitrate/day left 24-hour systolic pressure unchanged (133 to 132 mmHg, P=0.56) while an equivalent intake from nitrate-rich vegetables lowered daytime systolic pressure by about 5 mmHg. No trial has tested cardiovascular outcomes.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> Trials in hypertension used roughly 200-800 mg of nitrate per day from beetroot juice, most commonly 250 mL/day of concentrated or standard beetroot juice for 4 weeks. Meta-analysed trials ranged from a single acute dose (2 hours) to 6 weeks; the longest trial retrieved ran 12 weeks at 400 mg nitrate/day and was null on ambulatory pressure. The 2013 meta-regression found the size of the systolic effect tracked the daily nitrate dose (P&lt;0.05). Nitrate-depleted beetroot juice was the placebo in the best-controlled trials.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> Multiple randomized trials and at least four meta-analyses exist and pool to a clinic systolic reduction of roughly 4-5 mmHg, which is well beyond 'early'. It is held at 'moderate' rather than 'strong' for six reasons documented in the retrieved evidence: the effect largely disappears when pressure is measured by 24-hour ambulatory or home monitoring rather than in clinic; a double-blind crossover trial in treated hypertensive adults was flatly null despite confirmed 3-fold rises in plasma nitrite; an individual-participant meta-analysis in adults aged 55-76 found no significant pooled effect on any 24-hour measure; the longest trial retrieved, 12 weeks in 77 (pre)hypertensive adults, found beetroot juice left 24-hour and daytime systolic pressure unchanged while nitrate-rich vegetables lowered it; the 2024 meta-analysis in guideline-defined hypertension graded certainty of evidence as low; and trials are otherwise short (mostly 1-6 weeks) and small (7 to 68 participants) with no cardiovascular outcome data whatsoever.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/antihypertensive-medications">Blood-pressure lowering: whether to treat, and how low to aim</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>7</b> sources</span><span><b>7</b> trial-level or better</span><span><b>3</b> null or negative</span><span><b>2</b> mixed</span><span>2013–2024</span></div>
 <details open><summary>Sources (7)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/23596162/" data-pmid="23596162" rel="nofollow noopener" target="_blank">Inorganic nitrate and beetroot juice supplementation reduces blood pressure in adults: a systematic review and meta-analysis.</a>
-<div class="cwho">Siervo M, Lara J, Ogbonmwan I, Mathers JC, 2013 · PMID 23596162 · positive</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Siervo M, Lara J, Ogbonmwan I, Mathers JC, 2013 · PMID 23596162 · positive</div>
 <p class="cfind">Across 16 crossover trials (254 participants, 2 hours to 15 days), inorganic nitrate or beetroot juice lowered systolic BP 4.4 mmHg (95% CI -5.9 to -2.8, P&lt;0.001); the diastolic change of -1.1 mmHg (95% CI -2.2 to 0.1) was not significant (P=0.06), and meta-regression showed effect size tracked daily nitrate dose (P&lt;0.05).</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25421976/" data-pmid="25421976" rel="nofollow noopener" target="_blank">Dietary nitrate provides sustained blood pressure lowering in hypertensive patients: a randomized, phase 2, double-blind, placebo-controlled study.</a>
-<div class="cwho">Kapil V, Khambata RS, Robertson A, Caulfield MJ, Ahluwalia A, 2015 · PMID 25421976 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Kapil V, Khambata RS, Robertson A, Caulfield MJ, Ahluwalia A, 2015 · PMID 25421976 · positive</div>
 <p class="cfind">In 68 patients with hypertension (34 drug-naive, 34 treated) given 250 mL/day beetroot juice for 4 weeks versus nitrate-free juice, clinic BP fell 7.7/2.4 mmHg, 24-hour ambulatory BP 7.7/5.2 mmHg and home BP 8.1/3.8 mmHg, with no tachyphylaxis, endothelial function improved by about 20% and arterial stiffness reduced by 0.59 m/s.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/28319596/" data-pmid="28319596" rel="nofollow noopener" target="_blank">Medium-term effects of dietary nitrate supplementation on systolic and diastolic blood pressure in adults: a systematic review and meta-analysis.</a>
-<div class="cwho">Ashor AW, Lara J, Siervo M, 2017 · PMID 28319596 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Ashor AW, Lara J, Siervo M, 2017 · PMID 28319596 · mixed</div>
 <p class="cfind">Across 13 trials of 1-6 weeks (325 participants, 7 to 65 per study), dietary nitrate lowered systolic BP 4.1 mmHg (95% CI -6.1 to -2.2) and diastolic 2.0 mmHg (95% CI -3.0 to -0.9), but the effect was significant only in resting clinic measurements - no significant change was seen with 24-hour ambulatory or daily home monitoring.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/26135348/" data-pmid="26135348" rel="nofollow noopener" target="_blank">Absence of an effect of high nitrate intake from beetroot juice on blood pressure in treated hypertensive individuals: a randomized controlled trial.</a>
-<div class="cwho">Bondonno CP, Liu AH, Croft KD, et al., 2015 · PMID 26135348 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Bondonno CP, Liu AH, Croft KD, et al., 2015 · PMID 26135348 · null</div>
 <p class="cfind">In 27 treated hypertensive adults, one week of nitrate-rich beetroot juice raised plasma nitrite and nitrate 3-fold and salivary nitrite 7-fold (P&lt;0.001) versus nitrate-depleted placebo, yet produced no difference in home blood pressure or 24-hour ambulatory blood pressure.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/39069465/" data-pmid="39069465" rel="nofollow noopener" target="_blank">Effects of beetroot juice on blood pressure in hypertension according to European Society of Hypertension Guidelines: A systematic review and meta-analysis.</a>
-<div class="cwho">Gronroos R, Eggertsen R, Bernhardsson S, Praetorius Bjork M, 2024 · PMID 39069465 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Gronroos R, Eggertsen R, Bernhardsson S, Praetorius Bjork M, 2024 · PMID 39069465 · mixed</div>
 <p class="cfind">Across 11 trials (349 patients with clinical BP at or above 140/90 mmHg), beetroot juice reduced clinic systolic BP by 5.31 mmHg (95% CI -7.46 to -3.16, I2=64%) but had no significant effect on clinic diastolic BP or any 24-hour blood pressure outcome; certainty of evidence was graded low and the authors advised interpreting the results with caution.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25937622/" data-pmid="25937622" rel="nofollow noopener" target="_blank">Ageing modifies the effects of beetroot juice supplementation on 24-hour blood pressure variability: An individual participant meta-analysis.</a>
-<div class="cwho">Siervo M, Lara J, Jajja A, et al., 2015 · PMID 25937622 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Siervo M, Lara J, Jajja A, et al., 2015 · PMID 25937622 · null</div>
 <p class="cfind">In an individual-participant meta-analysis of four randomized trials in 85 adults aged 55-76, the pooled effect of beetroot juice on all 24-hour ambulatory blood pressure outcomes was not significant; a reduction in nocturnal systolic variability appeared only in participants under 65.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/34236392/" data-pmid="34236392" rel="nofollow noopener" target="_blank">Increasing Nitrate-Rich Vegetable Intake Lowers Ambulatory Blood Pressure in (pre)Hypertensive Middle-Aged and Older Adults: A 12-Wk Randomized Controlled Trial.</a>
-<div class="cwho">van der Avoort CMT, Ten Haaf DSM, Bongers CCWG, et al., 2021 · PMID 34236392 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>van der Avoort CMT, Ten Haaf DSM, Bongers CCWG, et al., 2021 · PMID 34236392 · null</div>
 <p class="cfind">In 77 (pre)hypertensive adults (baseline 144/87 mmHg, mean age 65) randomized for 12 weeks, beetroot juice supplying 400 mg nitrate/day left 24-hour systolic BP unchanged (133 +/- 11 to 132 +/- 12 mmHg, P=0.56) and daytime systolic BP unchanged (P=0.41), while the nitrate-rich vegetable arm fell from 134 +/- 10 to 129 +/- 9 mmHg daytime (P=0.006; P=0.010 versus control); diastolic BP did not change in any group.</p></li></ol></div></details>
 </div>
 

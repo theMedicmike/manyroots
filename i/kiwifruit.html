@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/insomnia">For insomnia</a></h4>
+
 <p style="margin:8px 0 12px">Eating two kiwifruit about an hour before bed is one of the most talked-about food tricks for sleep, and the small studies that exist are encouraging — people reported falling asleep faster and sleeping longer after a few weeks. The catch is that the key studies had no comparison group, so we cannot rule out that people improved simply because they expected to. Kiwifruit is a healthy, low-risk food for most people, but the sleep evidence is still preliminary — and it is a real allergen for some.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>For most people this is simply a fruit, and the trials (2 kiwifruit nightly for 4 weeks) reported no notable adverse events. Its acidity can aggravate mouth irritation or reflux in sensitive individuals. Overall tolerability as an ordinary food is excellent.</p>
@@ -118,26 +133,30 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>According to studies retrieved from PubMed in this review, evidence for kiwifruit in sleep is consistent in direction but methodologically weak. In the most-cited study (Lin et al., 2011), 24 adults with self-reported sleep problems ate 2 kiwifruit 1 hour before bedtime for 4 weeks in a free-living, self-controlled design (no placebo): Chinese PSQI score fell 42.4%, sleep-onset latency fell 35.4%, wake after sleep onset fell 28.9%, total sleep time rose 13.4%, and sleep efficiency rose 5.41%. Doherty et al. (2023) reported similar uncontrolled pre-post improvements in elite athletes after 4 weeks (improved PSQI global score, increased total sleep time and sleep efficiency, fewer awakenings, reduced wake after sleep onset). In the best-controlled adult study, Kanon et al. (2023) randomized 24 young men to a single evening serving of fresh or dried green kiwifruit versus a water control in crossover fashion: morning sleepiness, alertness on waking, and vigor improved after dried kiwifruit (p&lt;0.05), ease of awakening improved 24% in poor sleepers, and urinary serotonin metabolite 5-HIAA increased, but changes on sleep-quality ratings themselves were only trends (p&lt;0.1). A 3-arm RCT in 36 children with overweight/obesity (Kerkeni et al., 2025) found kiwifruit plus small-sided soccer improved sleep efficiency, latency, and total sleep time versus both exercise-only and control arms (p&lt;0.05), though the design cannot isolate kiwifruit's contribution and the population was pediatric. A 2026 scoping review (Nisar et al.) counted kiwifruit among melatonin-containing foods with reported sleep benefits while emphasizing that findings remain heterogeneous.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 2 medium green kiwifruit (Actinidia deliciosa) eaten about 1 hour before bedtime, typically for 4 weeks; one acute study used the flesh of 2 fresh kiwifruit or equivalent dried powder with the evening meal.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> The signature positive adult studies are small and uncontrolled: Lin 2011 (n=24, free-living self-controlled, no placebo) and Doherty 2023 (elite athletes, uncontrolled pre-post). The best-controlled adult study (Kanon 2023, randomized crossover vs water control) tested only a single evening serving and found improvements in morning sleepiness and alertness but only non-significant trends on sleep-quality ratings themselves. The one true parallel-arm RCT (Kerkeni 2025) was in children and bundled kiwifruit with an exercise program, so the kiwifruit effect cannot be isolated. No placebo-controlled adult trial of the standard 4-week protocol exists, so despite consistent positive direction this is preliminary — 'early'.</p></div></details>
+<h3 style="margin-top:18px">Also named in this entry's interactions</h3>
+<div class="xwith"><a href="/i/potassium">Potassium</a></div>
+<p class="muted" style="font-size:12px;margin:7px 0 0">Red means both entries flag each other. <a href="/interactions">Check a combination &rarr;</a></p>
+<div class="ebase"><span><b>5</b> sources</span><span><b>1</b> trial-level or better</span><span><b>2</b> mixed</span><span>2011–2026</span></div>
 <details open><summary>Sources (5)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/21669584/" data-pmid="21669584" rel="nofollow noopener" target="_blank">Effect of kiwifruit consumption on sleep quality in adults with sleep problems.</a>
-<div class="cwho">Lin HH et al., 2011 · PMID 21669584 · positive</div>
+<div class="cwho"><span class="ctype">Journal article</span>Lin HH et al., 2011 · PMID 21669584 · positive</div>
 <p class="cfind">Free-living self-controlled study (no placebo) in 24 adults with self-reported sleep problems; 2 kiwifruit 1 hour before bedtime for 4 weeks decreased CPSQI score 42.4%, sleep-onset latency 35.4%, and wake after sleep onset 28.9%, and increased total sleep time 13.4% and sleep efficiency 5.41% (subjective plus actigraphy).</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/36998905/" data-pmid="36998905" rel="nofollow noopener" target="_blank">Acute effects of fresh versus dried Hayward green kiwifruit on sleep quality, mood, and sleep-related urinary metabolites in healthy young men with good and poor sleep quality.</a>
-<div class="cwho">Kanon AP et al., 2023 · PMID 36998905 · mixed</div>
+<div class="cwho"><span class="ctype">Journal article</span>Kanon AP et al., 2023 · PMID 36998905 · mixed</div>
 <p class="cfind">Randomized single-blind crossover in 24 young men comparing a single evening serving of fresh or dried green kiwifruit with a water control; dried kiwifruit improved morning sleepiness, alertness upon awakening, and vigor (p&lt;0.05) and ease of awakening improved 24% in poor sleepers, but effects on sleep-quality ratings themselves were non-significant trends (p&lt;0.1); urinary serotonin metabolite 5-HIAA increased with both kiwifruit forms.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/37242157/" data-pmid="37242157" rel="nofollow noopener" target="_blank">The Impact of Kiwifruit Consumption on the Sleep and Recovery of Elite Athletes.</a>
-<div class="cwho">Doherty R et al., 2023 · PMID 37242157 · positive</div>
+<div class="cwho"><span class="ctype">Journal article</span>Doherty R et al., 2023 · PMID 37242157 · positive</div>
 <p class="cfind">Uncontrolled 4-week pre-post study in elite athletes consuming 2 green kiwifruit 1 hour before bed; reported clinically significant improvements in PSQI global score, significant increases in total sleep time and sleep efficiency, and significant reductions in number of awakenings and wake after sleep onset; no control group, so expectation effects cannot be excluded.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/39801291/" data-pmid="39801291" rel="nofollow noopener" target="_blank">4-Week intervention combining kiwifruit consumption and small-sided soccer games improves sleep quality in children with overweight/obesity and pre-existing sleep problems.</a>
-<div class="cwho">Kerkeni M et al., 2025 · PMID 39801291 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Kerkeni M et al., 2025 · PMID 39801291 · positive</div>
 <p class="cfind">3-arm RCT in 36 children aged 8-12 with overweight/obesity and sleep problems; the arm combining 2 kiwifruit 1 hour before bedtime with small-sided soccer games improved sleep efficiency, sleep latency, and total sleep time versus both the exercise-only and control arms (all p&lt;0.05); pediatric population and the bundled exercise component limit applicability to adult insomnia.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/42058225/" data-pmid="42058225" rel="nofollow noopener" target="_blank">Effectiveness of Melatonin-Containing Foods on Promoting Sleep: A Scoping Review.</a>
-<div class="cwho">Nisar T et al., 2026 · PMID 42058225 · mixed</div>
+<div class="cwho"><span class="ctype">Narrative review</span>Nisar T et al., 2026 · PMID 42058225 · mixed</div>
 <p class="cfind">Scoping review of 19 articles (14 interventional trials); kiwifruit was among melatonin-containing foods reported to improve sleep quality, duration, and efficiency, particularly in people with sleep disturbances, but the authors judged findings heterogeneous and limited by variability in populations, timing of consumption, and dosing.</p></li></ol></div></details>
 </div>
 

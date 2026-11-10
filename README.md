@@ -10,7 +10,7 @@ each cited to the primary literature, or absent.
 support" tier with nothing behind it. Widely used things the evidence does not support stay
 on the map, clearly labelled — removing them would make this a sales tool.
 
-- **9 conditions · 200 graded connections · 139 interventions · 1,477 citations**
+- **9 conditions · 208 graded connections · 138 interventions · 1,549 citations**
 - **34% of citations are null or negative** — evidence that something did not work
 - Nothing is sold here. No products, no affiliate links, no sponsored placements.
 

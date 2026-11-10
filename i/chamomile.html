@@ -56,6 +56,20 @@ ul.rows li{border-top:1px solid var(--line)}
 ul.rows a{display:flex;align-items:center;gap:11px;padding:11px 2px;text-decoration:none;color:var(--ink);font-size:15px}
 ul.rows a:hover{color:var(--accent)}
 ul.rows .g{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.caution{color:var(--neg)}
+.caution b{color:var(--neg);font-weight:600;margin-right:.4em}
+ul.rows li .caution{display:flex;gap:8px;padding:0 2px 11px;margin-top:-4px;font-size:12.5px;line-height:1.5;color:var(--neg)}
+ul.rows li .caution b{color:var(--neg);font-weight:600;flex:none}
+.ctype{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-right:7px;vertical-align:1px;white-space:nowrap}
+.ctype.top{border-color:var(--pos);color:var(--pos)}
+.ebase{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:10px 0 0}
+.ebase b{color:var(--ink);font-weight:600}
+.xwith{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.xwith a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+.xwith a:hover{border-color:var(--accent);color:var(--accent)}
+.xwith a.mutual{border-color:var(--neg);color:var(--neg)}
+.takeaway{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;margin:14px 0 0;background:var(--night2)}
+.takeaway:hover{border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:0 0 14px}
 .card h4{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--ivory)}
 .card h4 a{color:var(--ivory);text-decoration:none}
@@ -110,6 +124,7 @@ footer.site a{color:var(--muted)}
 
 <div class="card">
 <h4><a href="/c/anxiety">For anxiety &amp; stress</a></h4>
+
 <p style="margin:8px 0 12px">Chamomile is the familiar tea herb, and one small careful study found that people taking a concentrated extract reported somewhat less anxiety than people taking a dummy pill. Other studies, including an independent review that pooled many herbs, found no difference from placebo, so the honest answer is that we do not yet know. It was very well tolerated in the studies, which is part of its appeal.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Very well tolerated in trials: adverse-event rates were statistically indistinguishable from placebo in the 2009 RCT (p=0.417), the open-label phase of the long-term trial reported adverse events in 11.7% of 179 subjects with no serious adverse events, and the 2026 cancer-patient RCT reported no adverse effects in either arm. The main established risk is allergic reaction, including rare severe reactions, in people allergic to plants in the daisy/ragweed family (Asteraceae). Safety beyond about 38 weeks has not been studied.</p>
@@ -118,33 +133,36 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>Evidence for oral chamomile extract in generalized anxiety disorder (GAD) rests mainly on one 8-week, double-blind RCT (57 randomized, mild-to-moderate GAD) that found a significantly greater reduction in Hamilton Anxiety (HAM-A) score than placebo (p=0.047), with adverse-event frequency not differing between groups (p=0.417). In a two-phase trial, 179 participants with moderate-to-severe GAD received open-label chamomile 1,500 mg/day (58.1% met response criteria), and the 93 responders who agreed to continue were randomized to 26 weeks of chamomile or placebo substitution: the primary time-to-relapse endpoint was not significant (HR 0.52, 95% CI 0.20-1.33, p=0.16; relapse 15.2% vs 25.5%), though GAD symptoms stayed significantly lower on chamomile (p=0.0032). A 2019 meta-analysis of 12 RCTs found significant HAM-A improvement in GAD at 2 and 4 weeks (MD -1.43 and -1.79) and in sleep quality (SMD -0.73), but its pooling of three RCTs showed no effect on state anxiety (SMD -0.15, 95% CI -0.46 to 0.16, p=0.42) and its single insomnia RCT showed no change in insomnia severity. Contrary evidence matters here: an independent 2022 Bayesian network meta-analysis of 29 herbal anxiety trials placed chamomile at MD 0.54 (95% CrI -5.13 to 6.25) versus placebo, finding no anxiolytic signal, and concluded that placebo effects may account for part of the apparent herbal benefit generally. A 2026 triple-blind RCT in 80 breast-cancer patients receiving paclitaxel found anxiety scores fell significantly in both arms with no significant between-group difference. The randomized evidence base is therefore small, largely from one research group, and partly null.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 2009 GAD RCT: 220 mg capsules of pharmaceutical-grade extract standardized to 1.2% apigenin, over 8 weeks. 2016 University of Pennsylvania trials: 1,500 mg/day (500 mg three times daily); the open-label phase is described as 8 weeks in one report and 12 weeks in the other, followed by 26 weeks of randomized continuation.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> One small placebo-controlled RCT in generalized anxiety (n=57, primary outcome p=0.047, a borderline result), one randomized continuation trial that missed its primary relapse-prevention endpoint (HR 0.52, p=0.16), and a 2019 meta-analysis positive on GAD symptom scores but null on state anxiety. Against that, an independent 2022 network meta-analysis found no anxiolytic signal at all (MD 0.54, 95% CrI -5.13 to 6.25), and a 2026 RCT in cancer patients found no between-group anxiety difference. Torn between moderate and early, graded down: the randomized evidence base is small, comes essentially from one research group, and the independent replications are null.</p></div></details>
+
+<div class="ebase"><span><b>6</b> sources</span><span><b>6</b> trial-level or better</span><span><b>2</b> null or negative</span><span><b>2</b> mixed</span><span>2009–2026</span></div>
 <details open><summary>Sources (6)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/19593179/" data-pmid="19593179" rel="nofollow noopener" target="_blank">A randomized, double-blind, placebo-controlled trial of oral Matricaria recutita (chamomile) extract therapy for generalized anxiety disorder.</a>
-<div class="cwho">Amsterdam JD et al., 2009 · PMID 19593179 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Amsterdam JD et al., 2009 · PMID 19593179 · positive</div>
 <p class="cfind">In 57 randomized outpatients with mild-to-moderate GAD (61 enrolled), 8 weeks of chamomile extract produced a significantly greater reduction in mean total HAM-A score than placebo (p=0.047); the proportion of patients experiencing 0, 1, 2, or 3+ adverse events did not differ between groups (p=0.417), and one patient in each arm discontinued for adverse events.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/27912875/" data-pmid="27912875" rel="nofollow noopener" target="_blank">Long-term chamomile (Matricaria chamomilla L.) treatment for generalized anxiety disorder: A randomized clinical trial.</a>
-<div class="cwho">Mao JJ et al., 2016 · PMID 27912875 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Mao JJ et al., 2016 · PMID 27912875 · mixed</div>
 <p class="cfind">Of 179 enrolled, 93 (51.9%) responded and agreed to continue; randomized to 26 weeks of continuation chamomile (1,500 mg/day) or placebo substitution, the primary relapse endpoint was not significant (HR 0.52, 95% CI 0.20-1.33, p=0.16; relapse 25.5% placebo vs 15.2% chamomile), though chamomile participants maintained significantly lower GAD symptoms during follow-up (p=0.0032). Authors attribute the null primary outcome partly to limited sample size and a lower-than-expected placebo relapse rate.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/31006899/" data-pmid="31006899" rel="nofollow noopener" target="_blank">Therapeutic efficacy and safety of chamomile for state anxiety, generalized anxiety disorder, insomnia, and sleep quality: A systematic review and meta-analysis of randomized trials and quasi-randomized trials.</a>
-<div class="cwho">Hieu TH et al., 2019 · PMID 31006899 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Hieu TH et al., 2019 · PMID 31006899 · mixed</div>
 <p class="cfind">Twelve RCTs included: significant GAD improvement on HAM-A at 2 weeks (MD -1.43, 95% CI -2.47 to -0.39, p=0.007) and 4 weeks (MD -1.79, 95% CI -3.14 to -0.43, p=0.0097) and in sleep quality (SMD -0.73, 95% CI -1.23 to -0.23), but pooling of three RCTs showed no difference in anxiety (SMD -0.15, 95% CI -0.46 to 0.16, p=0.4214) and the one insomnia RCT found no significant change in insomnia severity index.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/35378276/" data-pmid="35378276" rel="nofollow noopener" target="_blank">Medicinal herbs for the treatment of anxiety: A systematic review and network meta-analysis.</a>
-<div class="cwho">Zhang W et al., 2022 · PMID 35378276 · null</div>
+<div class="cwho"><span class="ctype top">Network meta-analysis</span>Zhang W et al., 2022 · PMID 35378276 · null</div>
 <p class="cfind">Independent Bayesian network meta-analysis of 29 RCTs comparing 12 medicinal herbs in diagnosed or subthreshold anxiety: chamomile showed no anxiolytic signal versus placebo (HAM-A MD 0.54, 95% CrI -5.13 to 6.25), with the authors stating there was insufficient evidence to confirm either its effectiveness or its ineffectiveness. The review concluded all results should be considered preliminary given unconvincing sample sizes and the potential effectiveness of placebos.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/41538720/" data-pmid="41538720" rel="nofollow noopener" target="_blank">Evaluation of the protective effect of chamomile oral solution on the incidence of neurotoxicity caused by paclitaxel in breast cancer patients.</a>
-<div class="cwho">Nikkhah N et al., 2026 · PMID 41538720 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Nikkhah N et al., 2026 · PMID 41538720 · null</div>
 <p class="cfind">In a triple-blind RCT of 80 cancer patients on paclitaxel randomized to chamomile oral solution (n=40) or placebo (n=40) across four chemotherapy courses, anxiety scores decreased significantly in both groups but the between-group difference was not significant; the authors conclude chamomile had no significant impact on reducing anxiety. Sleep quality did improve significantly (p=0.027) and neither group experienced adverse effects.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/27912871/" data-pmid="27912871" rel="nofollow noopener" target="_blank">Short-term open-label chamomile (Matricaria chamomilla L.) therapy of moderate to severe generalized anxiety disorder.</a>
-<div class="cwho">Keefe JR et al., 2016 · PMID 27912871 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Keefe JR et al., 2016 · PMID 27912871 · positive</div>
 <p class="cfind">In 179 subjects with moderate-to-severe GAD given open-label chamomile 1,500 mg/day for up to 8 weeks, 58.1% (95% CI 50.9-65.5%) met response criteria and GAD-7 improved significantly (beta=-8.4, 95% CI -9.1 to -7.7); 15.6% discontinued prematurely, adverse events occurred in 11.7%, and there were no serious adverse events. This was an uncontrolled phase with no placebo comparison, so it cannot establish efficacy.</p></li></ol></div></details>
 </div><div class="card">
 <h4><a href="/c/insomnia">For insomnia</a></h4>
+
 <p style="margin:8px 0 12px">Chamomile tea is one of the world's most popular bedtime drinks, and a few small studies suggest it may help people feel they sleep a little better, especially older adults and new mothers. But the one careful study in people with true chronic insomnia found it worked no better than a placebo, and pooled analyses have not shown it lengthens or deepens sleep. It is gentle and generally safe, so it is a low-risk thing to try, just with modest expectations.</p>
 <h3 style="margin-top:0">Safety</h3>
 <div class="safety"><p>Tolerability in trials was good: the chronic-insomnia RCT found no difference in adverse events versus placebo, the 2019 meta-analysis reported only mild adverse events across three of twelve trials, and the 2015 herbal-medicine meta-analysis found a similar or smaller number of adverse events per person with chamomile than placebo. Note that most trials assessed adverse events by passive surveillance only.</p>
@@ -153,30 +171,32 @@ footer.site a{color:var(--muted)}
 <details><summary>What the evidence says</summary><div class="dbody"><p>Evidence for chamomile in sleep is limited and mixed, and the insomnia-specific data are null. In the only randomized placebo-controlled trial in DSM-IV chronic primary insomnia (n=34, 270 mg extract twice daily for 28 days), there were no significant between-group differences on any sleep-diary measure, and total sleep time showed a moderate effect size favoring placebo (Zick 2011); a meta-analysis of herbal monopreparations for insomnia (14 RCTs, 1,602 participants, including chamomile) similarly found no statistically significant difference between any herbal medicine and placebo on any of 13 efficacy measures (Leach &amp; Page 2015). By contrast, meta-analyses of broader sleep-quality outcomes are positive: a 2019 systematic review of 12 randomized or quasi-randomized trials found improved sleep quality (SMD -0.73, 95% CI -1.23 to -0.23, P &lt; 0.005) while noting the single insomnia RCT showed no significant change in insomnia severity (Hieu 2019), and a 2024 meta-analysis (10 trials, 772 participants) found a significant Pittsburgh Sleep Quality Index reduction (WMD -1.88, 95% CI -3.46 to -0.31, I2 88.4%) but no improvement in sleep duration, sleep efficiency, or daytime functioning (Kazemi 2024). Positive individual trials are small and population-specific: a single-blind RCT in 60 elderly nursing-home residents (200 mg twice daily, 28 days) reported significantly better Pittsburgh Sleep Quality Index scores versus placebo (P &lt; 0.05), and an RCT in 80 sleep-disturbed postpartum women found reduced sleep-inefficiency scores after 2 weeks of chamomile tea (t = -2.482, P = 0.015) with the effect no longer present at 4-week follow-up. Adverse events in trials did not differ from placebo.</p>
 <p><b style="color:var(--ink)">Doses studied:</b> 200-270 mg standardized extract twice daily for 28 days in capsule trials; one cup of chamomile tea daily for 2 weeks in the postpartum trial.</p>
 <p><b style="color:var(--ink)">Why this grade:</b> The only randomized trial in diagnosed chronic insomnia (n=34) found no significant benefit on any sleep-diary measure, and a pooled analysis of herbal monopreparations for insomnia (Leach &amp; Page 2015) was likewise null on all 13 efficacy measures. Positive findings come from small, mostly single-blind trials in special populations (elderly, postpartum) and from meta-analyses of heterogeneous sleep-quality outcomes (Hieu 2019; Kazemi 2024) in which sleep duration, sleep efficiency, and daytime functioning did not improve. Torn between moderate and early, the lower grade applies: the insomnia-specific evidence is null and the sleep-quality evidence is preliminary and inconsistent.</p></div></details>
+
+<div class="ebase"><span><b>6</b> sources</span><span><b>6</b> trial-level or better</span><span><b>2</b> null or negative</span><span><b>3</b> mixed</span><span>2011–2024</span></div>
 <details open><summary>Sources (6)</summary><div class="dbody"><ol class="cites"><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/21939549/" data-pmid="21939549" rel="nofollow noopener" target="_blank">Preliminary examination of the efficacy and safety of a standardized chamomile extract for chronic primary insomnia: a randomized placebo-controlled pilot study.</a>
-<div class="cwho">Zick SM et al., 2011 (BMC Complement Altern Med) · PMID 21939549 · null</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Zick SM et al., 2011 (BMC Complement Altern Med) · PMID 21939549 · null</div>
 <p class="cfind">In 34 adults with chronic primary insomnia taking 270 mg chamomile twice daily for 28 days, there were no significant differences versus placebo on any sleep-diary measure (total sleep time, sleep efficiency, latency, WASO, sleep quality, awakenings); total sleep time showed a moderate effect size favoring placebo. Adverse events did not differ from placebo.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/31006899/" data-pmid="31006899" rel="nofollow noopener" target="_blank">Therapeutic efficacy and safety of chamomile for state anxiety, generalized anxiety disorder, insomnia, and sleep quality: A systematic review and meta-analysis of randomized trials and quasi-randomized trials.</a>
-<div class="cwho">Hieu TH et al., 2019 (Phytother Res) · PMID 31006899 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Hieu TH et al., 2019 (Phytother Res) · PMID 31006899 · mixed</div>
 <p class="cfind">Systematic review including 12 randomized and quasi-randomized trials; meta-analysis showed a significant improvement in sleep quality after chamomile administration (SMD -0.73, 95% CI -1.23 to -0.23, P &lt; 0.005), but the single RCT evaluating insomnia found no significant change in insomnia severity index (P &gt; 0.05). Only mild adverse events were reported in three RCTs.</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/39106912/" data-pmid="39106912" rel="nofollow noopener" target="_blank">Effects of chamomile (Matricaria chamomilla L.) on sleep: A systematic review and meta-analysis of clinical trials.</a>
-<div class="cwho">Kazemi A et al., 2024 (Complement Ther Med) · PMID 39106912 · mixed</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Kazemi A et al., 2024 (Complement Ther Med) · PMID 39106912 · mixed</div>
 <p class="cfind">Systematic review of 10 clinical trials (772 participants); meta-analysis of 5 studies found a significant reduction in Pittsburgh Sleep Quality Index score (WMD -1.88, 95% CI -3.46 to -0.31, I2 88.4%), but chamomile did not improve sleep duration, sleep efficiency, or daytime functioning measures; no adverse events were reported in any included study, though adverse-event surveillance was mostly passive.</p></li><li>
 <span class="cdir" style="background:var(--nul)" title="null"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/25644982/" data-pmid="25644982" rel="nofollow noopener" target="_blank">Herbal medicine for insomnia: A systematic review and meta-analysis.</a>
-<div class="cwho">Leach MJ &amp; Page AT, 2015 (Sleep Med Rev) · PMID 25644982 · null</div>
+<div class="cwho"><span class="ctype top">Meta-analysis</span>Leach MJ &amp; Page AT, 2015 (Sleep Med Rev) · PMID 25644982 · null</div>
 <p class="cfind">Across 14 RCTs (1,602 participants with insomnia) of four orally administered herbal monopreparations (valerian, chamomile, kava, wuling), there was no statistically significant difference between any herbal medicine and placebo, or any herbal medicine and active control, for any of the thirteen measures of clinical efficacy; chamomile had a similar or smaller number of adverse events per person than placebo.</p></li><li>
 <span class="cdir" style="background:var(--pos)" title="positive"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/29154054/" data-pmid="29154054" rel="nofollow noopener" target="_blank">The effects of chamomile extract on sleep quality among elderly people: A clinical trial.</a>
-<div class="cwho">Adib-Hajbaghery M &amp; Mousavi SN, 2017 (Complement Ther Med) · PMID 29154054 · positive</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Adib-Hajbaghery M &amp; Mousavi SN, 2017 (Complement Ther Med) · PMID 29154054 · positive</div>
 <p class="cfind">In a single-blind RCT of 60 elderly nursing-home residents, chamomile extract 200 mg twice daily for 28 days significantly improved Pittsburgh Sleep Quality Index scores versus wheat-flour placebo (P &lt; 0.05); baseline sleep quality did not differ between groups (P = 0.639).</p></li><li>
 <span class="cdir" style="background:var(--mixed)" title="mixed"></span>
 <a href="https://pubmed.ncbi.nlm.nih.gov/26483209/" data-pmid="26483209" rel="nofollow noopener" target="_blank">Effects of an intervention with drinking chamomile tea on sleep quality and depression in sleep disturbed postnatal women: a randomized controlled trial.</a>
-<div class="cwho">Chang SM &amp; Chen CH, 2016 (J Adv Nurs) · PMID 26483209 · mixed</div>
+<div class="cwho"><span class="ctype top">Randomised trial</span>Chang SM &amp; Chen CH, 2016 (J Adv Nurs) · PMID 26483209 · mixed</div>
 <p class="cfind">In 80 Taiwanese postpartum women with poor sleep quality, 2 weeks of chamomile tea significantly reduced physical-symptoms-related sleep inefficiency (t = -2.482, P = 0.015) and depression scores (t = -2.372, P = 0.020) versus usual care, but scores were similar between groups at the 4-week post-test, indicating the effect was limited to the immediate term.</p></li></ol></div></details>
 </div>
 

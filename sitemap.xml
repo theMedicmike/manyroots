@@ -20,7 +20,7 @@
   <url><loc>https://www.manyroots.org/i/omega-3</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/green-tea</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/fermented-foods</loc><priority>0.7</priority></url>
-  <url><loc>https://www.manyroots.org/i/cbt-anxiety</loc><priority>0.7</priority></url>
+  <url><loc>https://www.manyroots.org/i/cbt</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/mindfulness-meditation</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/regular-exercise</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/breathwork</loc><priority>0.7</priority></url>
@@ -54,7 +54,6 @@
   <url><loc>https://www.manyroots.org/i/cannabis-cbd</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/glucosamine-chondroitin</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/collagen</loc><priority>0.7</priority></url>
-  <url><loc>https://www.manyroots.org/i/cbt-pain</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/acupuncture</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/tai-chi</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/nsaids</loc><priority>0.7</priority></url>
@@ -66,25 +65,22 @@
   <url><loc>https://www.manyroots.org/i/saffron</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/rhodiola</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/sam-e</loc><priority>0.7</priority></url>
-  <url><loc>https://www.manyroots.org/i/cbt-depression</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/behavioral-activation</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/morning-bright-light</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/ketamine-esketamine</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/ect</loc><priority>0.7</priority></url>
+  <url><loc>https://www.manyroots.org/i/amitriptyline</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/guarana</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/iron</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/vitamin-b12</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/coq10</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/creatine</loc><priority>0.7</priority></url>
-  <url><loc>https://www.manyroots.org/i/cbt-fatigue</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/pacing</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/treat-underlying-cause</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/modafinil-stimulants</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/caffeine</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/gut-directed-hypnotherapy</loc><priority>0.7</priority></url>
-  <url><loc>https://www.manyroots.org/i/cbt-ibs</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/antispasmodics</loc><priority>0.7</priority></url>
-  <url><loc>https://www.manyroots.org/i/amitriptyline</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/rifaximin</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/linaclotide</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/loperamide</loc><priority>0.7</priority></url>
@@ -106,6 +102,10 @@
   <url><loc>https://www.manyroots.org/i/alcohol-reduction</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/home-bp-monitoring</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/antihypertensive-medications</loc><priority>0.7</priority></url>
+  <url><loc>https://www.manyroots.org/i/beta-blockers</loc><priority>0.7</priority></url>
+  <url><loc>https://www.manyroots.org/i/ace-inhibitors-arbs</loc><priority>0.7</priority></url>
+  <url><loc>https://www.manyroots.org/i/calcium-channel-blockers</loc><priority>0.7</priority></url>
+  <url><loc>https://www.manyroots.org/i/thiazide-diuretics</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/feverfew</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/butterbur</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/riboflavin-b2</loc><priority>0.7</priority></url>
@@ -114,7 +114,6 @@
   <url><loc>https://www.manyroots.org/i/triptans</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/cgrp-inhibitors</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/topiramate</loc><priority>0.7</priority></url>
-  <url><loc>https://www.manyroots.org/i/beta-blockers</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/valerian-root</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/glycine</loc><priority>0.7</priority></url>
   <url><loc>https://www.manyroots.org/i/tart-cherry</loc><priority>0.7</priority></url>
